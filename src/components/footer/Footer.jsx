@@ -1,0 +1,46 @@
+import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6";
+
+const Footer = () => {
+return (
+    <>
+        <div className="bg-secondary py-3 grid place-items-center">
+            <img
+                src="assets/images/logo/logo.png"
+                alt="Logo"
+                className="h-[60px]"
+            />
+        </div>
+        <div className="bg-primary py-5">
+            <div className="c-space">
+                <div className="flex items-center justify-between">
+
+                    {/* Social */}
+                    <div className="flex items-center gap-4">
+                        <p className="text-white font-heading">Follow Us On</p>
+                        <div className="flex items-center gap-3">
+                            <a href="" className="bg-white p-2 rounded-full">
+                                <FaFacebook className="text-primary" />
+                            </a>
+                            <a href="" className="bg-white p-2 rounded-full">
+                                <FaInstagram className="text-primary" />
+                            </a>
+                            <a href="" className="bg-white p-2 rounded-full">
+                                <FaTiktok className="text-primary" />
+                            </a>
+                            <a href="" className="bg-white p-2 rounded-full">
+                                <FaXTwitter className="text-primary" />
+                            </a>
+                        </div>
+                    </div>
+
+                    {/* Copyright text */}
+                    <p className="text-white font-heading">@Copyright {new Date().getFullYear()} Happy Potato. All Right Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </>
+);
+};
+
+export default Footer;

@@ -16,7 +16,7 @@ export default function HeroSlider() {
   }, []);
 
   return (
-    <section className="py-10 md:py-18 lg:py-10">
+    <section className="pt-10 md:pt-18 lg:pt-10">
       <div className="c-space">
         <div className="relative">
           {/* Left arrow (outside) */}

@@ -31,12 +31,11 @@
 @font-face {
   font-family: "WoodChuck";
   src: url("../assets/fonts/Woodchuck-Heavy.woff2") format("woff2");
-  font-weight: 800; /* or 900 if your “Heavy” is black */
+  font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 
-/* WoodHeinzNo4 — regular */
 @font-face {
   font-family: "WoodHeinzNo4";
   src: url("../assets/fonts/WoodHeinzNo4-Regular.woff2") format("woff2");
@@ -45,30 +44,35 @@
   font-display: swap;
 }
 
-/* --------------- Tailwind v4 tokens --------------- */
 @theme {
   /* colors */
   --color-primary: #df0b1a;
   --color-secondary: #fbb402;
-  --color-secondary-100: #dbeafe;
+  --color-customBlue: #274789;
   --color-secondary-500: #3b82f6;
 
-  /* fonts */
   --font-sans: "WoodChuck", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
-               Roboto, "Helvetica Neue", Arial, sans-serif;
+    Roboto, "Helvetica Neue", Arial, sans-serif;
 
-  /* use WoodHeinzNo4 for headings or accents */
   --font-heading: "WoodHeinzNo4", var(--font-sans);
 }
 
-/* sensible defaults */
 @layer base {
-  html { font-family: var(--font-sans); }
-  body { @apply bg-slate-50; }
-  h1, h2, h3, h4 { font-family: var(--font-heading); }
+  html {
+    font-family: var(--font-sans);
+  }
+  body {
+    @apply bg-slate-50;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-heading);
+  }
 }
 
-.c-space{
+.c-space {
   @apply max-w-7xl mx-auto px-6 md:px-10 lg:px-16;
 }
 
@@ -77,5 +81,5 @@
 }
 
 .fries-swiper .swiper-wrapper {
-    transition-timing-function: cubic-bezier(.22,1,.36,1) !important;
-  }
+  transition-timing-function: cubic-bezier(0.22, 1, 0.36, 1) !important;
+}
