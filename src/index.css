@@ -44,6 +44,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "WoodHeinzNo4-new";
+  src: url("../assets/fonts/WoodHeinzNo4-New.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 @theme {
   /* colors */
   --color-primary: #df0b1a;
@@ -55,6 +63,8 @@
     Roboto, "Helvetica Neue", Arial, sans-serif;
 
   --font-heading: "WoodHeinzNo4", var(--font-sans);
+
+  --font-headingNew: "WoodHeinzNo4-new", var(--font-sans);
 }
 
 @layer base {
