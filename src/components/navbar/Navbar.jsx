@@ -25,14 +25,14 @@ const Navbar = () => {
           <nav className="flex items-center justify-between">
             <NavLink to="/" className="flex items-center gap-2">
               <img
-                src="./assets/images/logo/logo.png"
+                src="assets/images/logo/logo.png"
                 alt="Logo"
-                className="h-12"
+                className="h-8 md:h-9 lg:h-12"
               />
               <span className="sr-only">Happy Potato Bangladesh</span>
             </NavLink>
 
-            <div className="hidden md:flex items-center gap-11 uppercase font-heading">
+            <div className="hidden lg:flex items-center gap-11 uppercase font-heading">
               {navLinks.map((link) => (
                 <NavLink
                   key={link.name}
@@ -53,7 +53,7 @@ const Navbar = () => {
 
               <button
                 onClick={toggleSidebar}
-                className="md:hidden inline-flex items-center justify-center rounded-md p-2 hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50"
+                className="lg:hidden inline-flex items-center justify-center rounded-md hover:bg-white/10 focus:outline-none focus:ring-2 focus:ring-white/50"
                 aria-controls="mobileSidebar"
                 aria-expanded={sidebarOpen}
               >
@@ -64,7 +64,7 @@ const Navbar = () => {
           </nav>
         </div>
 
-        <div className="bg-secondary h-3"></div>
+        <div className="bg-secondary h-1 lg:h-3"></div>
       </header>
 
       {/* Off-canvas Sidebar for Mobile */}
@@ -79,7 +79,7 @@ const Navbar = () => {
 
         {/* Drawer */}
         <aside
-          className={`fixed inset-y-0 left-0 w-80 max-w-[85vw] bg-white text-zinc-800 transform transition-transform z-50 md:hidden ${
+          className={`fixed inset-y-0 left-0 w-80 max-w-[85vw] bg-white text-zinc-800 transform transition-transform z-50 lg::hidden ${
             sidebarOpen ? "translate-x-0" : "-translate-x-full"
           }`}
           role="dialog"

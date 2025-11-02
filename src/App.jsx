@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router"
-import Navbar from "./components/navbar/Navbar"
 import MainLayout from "./layouts/MainLayout"
+import HomePage from "./pages/home/HomePage"
+import Menu from "./pages/menu/MenuPage"
 
 function App() {
 
@@ -8,8 +9,8 @@ function App() {
     <>
       <Routes>
         <Route path="/*" element={<MainLayout />} >
-          <Route index element={<div>Home</div>} />
-          <Route path="menu" element={<div>Menu</div>} />
+          <Route index element={<HomePage />} />
+          <Route path="menu" element={<Menu />} />
         </Route>
       </Routes>
     </>
