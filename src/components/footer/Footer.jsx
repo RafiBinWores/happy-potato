@@ -13,7 +13,7 @@ return (
         </div>
         <div className="bg-primary py-5">
             <div className="c-space">
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between flex-col md:flex-row gap-5">
 
                     {/* Social */}
                     <div className="flex items-center gap-4">
