@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@font-face {
+  font-family: "WoodChuck";
+  src: url("../assets/fonts/Woodchuck-Thin.woff2") format("woff2");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "WoodChuck";
+  src: url("../assets/fonts/Woodchuck-Light.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "WoodChuck";
+  src: url("../assets/fonts/Woodchuck-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "WoodChuck";
+  src: url("../assets/fonts/Woodchuck-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "WoodChuck";
+  src: url("../assets/fonts/Woodchuck-Heavy.woff2") format("woff2");
+  font-weight: 800; /* or 900 if your “Heavy” is black */
+  font-style: normal;
+  font-display: swap;
+}
+
+/* WoodHeinzNo4 — regular */
+@font-face {
+  font-family: "WoodHeinzNo4";
+  src: url("../assets/fonts/WoodHeinzNo4-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --------------- Tailwind v4 tokens --------------- */
+@theme {
+  /* colors */
+  --color-primary: #df0b1a;
+  --color-secondary: #fbb402;
+  --color-secondary-100: #dbeafe;
+  --color-secondary-500: #3b82f6;
+
+  /* fonts */
+  --font-sans: "WoodChuck", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif;
+
+  /* use WoodHeinzNo4 for headings or accents */
+  --font-heading: "WoodHeinzNo4", var(--font-sans);
+}
+
+/* sensible defaults */
+@layer base {
+  html { font-family: var(--font-sans); }
+  h1, h2, h3, h4 { font-family: var(--font-heading); }
+}
+
+.c-space{
+  @apply max-w-7xl mx-auto px-4 lg:px-14;
+}
+
+.nav-link {
+  @apply text-white px-3 py-2 rounded-md font-medium hover:text-secondary duration-200;
+}
+
+.fries-swiper .swiper-wrapper {
+    transition-timing-function: cubic-bezier(.22,1,.36,1) !important;
+  }
