@@ -1,5 +1,5 @@
 import HeroSlider from "../../components/sliders/HeroSlider";
-import Fries from "../../components/Fries/Fries";
+import Fries from "../../components/fries/Fries";
 
 const flavors = [
   {
