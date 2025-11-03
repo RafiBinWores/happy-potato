@@ -118,7 +118,7 @@ const Home = () => {
 
 
 {/* Franchise */}
-      <section className="bg-[url('assets/images/bg/franchise-bg.jpg')] bg-cover bg-center">
+      <section className="bg-[url('/assets/images/bg/franchise-bg.jpg')] bg-cover bg-center">
       <div className="c-space pt-16">
         <div className="flex items-center flex-col-reverse lg:flex-row md:gap-28 lg:gap-0 gap-16">
           <div className="basis-3/5">
