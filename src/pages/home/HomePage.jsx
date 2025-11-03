@@ -37,7 +37,7 @@ const Home = () => {
           <Fries />
         </div>
 
-        <div className="grid md:grid-cols-4 lg:grid-cols-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8">
           {flavors.map((flavor, index) => (
             <div
               key={index}
