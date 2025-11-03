@@ -20,7 +20,7 @@ const Navbar = () => {
 
     return (
         <>
-            <header className="bg-primary text-white">
+            <header className="bg-primary text-white sticky top-0 z-50">
                 <div className="c-space py-2">
                     <nav className="flex items-center justify-between">
                         <NavLink to="/" className="flex items-center gap-2">

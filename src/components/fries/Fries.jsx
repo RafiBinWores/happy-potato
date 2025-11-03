@@ -5,9 +5,9 @@ const Fries = () => {
         <img
           src="assets/images/fries1.png"
           alt="Fries"
-          className="z-50 relative"
+          className="z-40 relative"
         />
-        <p className="relative z-50 text-[19px] pt-6 lg:pt-3 text-customBlue/95 uppercase">
+        <p className="relative z-40 text-[19px] pt-6 lg:pt-3 text-customBlue/95 uppercase">
           Regular
         </p>
         <div className="bg-white h-[125px] lg:h-[130px] absolute left-0 -bottom-4 lg:-bottom-7 w-full rounded-r-2xl lg:rounded-r-none rounded-l-2xl "></div>
@@ -16,9 +16,9 @@ const Fries = () => {
         <img
           src="assets/images/fries2.png"
           alt="Fries"
-          className="z-50 w-[230px] relative"
+          className="z-40 w-[230px] relative"
         />
-        <p className="relative z-50 text-[19px] pt-6 lg:pt-3 text-customBlue/95 uppercase">
+        <p className="relative z-40 text-[19px] pt-6 lg:pt-3 text-customBlue/95 uppercase">
           Large
         </p>
         <div className="bg-white h-[125px] lg:h-[130px] absolute left-0 -bottom-4 lg:-bottom-7 w-full rounded-2xl lg:rounded-none"></div>
@@ -27,9 +27,9 @@ const Fries = () => {
         <img
           src="assets/images/fries3.png"
           alt="Fries"
-          className="z-50 w-60 relative"
+          className="z-40 w-60 relative"
         />
-        <p className="relative z-50 text-[19px] pt-6 lg:pt-3 text-customBlue/95 uppercase">
+        <p className="relative z-40 text-[19px] pt-6 lg:pt-3 text-customBlue/95 uppercase">
           Mega
         </p>
         <div className="bg-white h-[125px] lg:h-[130px] absolute left-0 -bottom-4 lg:-bottom-7 w-full rounded-2xl lg:rounded-none"></div>
@@ -38,9 +38,9 @@ const Fries = () => {
         <img
           src="assets/images/fries4.png"
           alt="Fries"
-          className="z-50 lg:w-[300px] relative"
+          className="z-40 lg:w-[300px] relative"
         />
-        <p className="relative z-50 text-[19px] pt-6 lg:pt-3 text-customBlue/95 uppercase">
+        <p className="relative z-40 text-[19px] pt-6 lg:pt-3 text-customBlue/95 uppercase">
           Giga
         </p>
         <div className="bg-white h-[125px] lg:h-[130px] absolute left-0 -bottom-4 lg:-bottom-7 w-full rounded-2xl lg:rounded-l-none lg:rounded-r-2xl"></div>
