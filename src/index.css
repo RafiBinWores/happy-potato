@@ -4,35 +4,35 @@
   font-family: "WoodChuck";
   src: url("../assets/fonts/Woodchuck-Thin.woff2") format("woff2");
   font-weight: 100;
-  font-style: normal;
+  font-style: thin;
   font-display: swap;
 }
 @font-face {
   font-family: "WoodChuck";
   src: url("../assets/fonts/Woodchuck-Light.woff2") format("woff2");
   font-weight: 300;
-  font-style: normal;
+  font-style: light;
   font-display: swap;
 }
 @font-face {
   font-family: "WoodChuck";
   src: url("../assets/fonts/Woodchuck-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
+  font-style: regular;
   font-display: swap;
 }
 @font-face {
   font-family: "WoodChuck";
   src: url("../assets/fonts/Woodchuck-Bold.woff2") format("woff2");
   font-weight: 700;
-  font-style: normal;
+  font-style: bold;
   font-display: swap;
 }
 @font-face {
   font-family: "WoodChuck";
   src: url("../assets/fonts/Woodchuck-Heavy.woff2") format("woff2");
   font-weight: 900;
-  font-style: normal;
+  font-style: heavy;
   font-display: swap;
 }
 
@@ -86,7 +86,7 @@
   h2,
   h3,
   h4 {
-    font-family: var(--font-heading);
+    font-family: var(--font-headingNew);
   }
 }
 

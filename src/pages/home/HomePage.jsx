@@ -116,7 +116,24 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="bg-white h-10"></section>
+
+{/* Franchise */}
+      <section className="bg-[url('assets/images/bg/franchise-bg.jpg')] bg-cover bg-center">
+      <div className="c-space pt-16">
+        <div className="flex items-center flex-col-reverse lg:flex-row md:gap-28 lg:gap-0 gap-16">
+          <div className="basis-3/5">
+            <img src="assets/images/franchise-fries.png" alt="Fries" />
+          </div>
+          <div className="basis-2/5 text-center lg:text-start">
+            <p className="uppercase font-headingNew text-customBlue text-base md:text-[19px] ">Join the Happy Potato Family</p>
+            <h3 className="uppercase text-primary text-[23px] md:text-[40px] leading-[25px] md:leading-11 text-shadow-[3px_4px_0px_#ffffff]">Franchise <br /> Opportunities Await!</h3>
+            <p className="pt-5 pb-10 font-regular text-[13px]">Interested in starting a business? Come join the home-grown brand that’s elevating the french fries culture to the next level through honesty, teamwork, entrepreneurship, and innovation!</p>
+
+            <a href="" className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[11px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300">Own a Happy Potato</a>
+          </div>
+        </div>
+      </div>
+      </section>
     </>
   );
 };
