@@ -76,7 +76,7 @@ const Home = () => {
         <div className="text-center mb-12">
           <a
             href=""
-            className="bg-primary px-8 py-3 font-headingNew text-white rounded-full text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
+            className="bg-primary px-8 py-2 font-headingNew text-white rounded-full text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
           >
             Discover Our Flavours
           </a>
