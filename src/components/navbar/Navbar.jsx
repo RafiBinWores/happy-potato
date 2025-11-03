@@ -37,11 +37,33 @@ const Navbar = () => {
                                 <NavLink
                                     key={link.name}
                                     to={link.path}
+                                    // make this a "group" so child icon can react to hover
                                     className={({ isActive }) =>
-                                        `hover:text-secondary transition-colors ${isActive ? "text-secondary" : ""}`
+                                        `relative group hover:text-secondary gap-2 transition-colors ${isActive ? "text-secondary" : ""}`
                                     }
                                 >
-                                    {link.name}
+                                    {/* use NavLink children as a function to get isActive for the icon */}
+                                    {({ isActive }) => (
+                                        <>
+                                            {/* menu icon: hidden by default, shown on hover OR when active.
+                                                It slides down into place (translate-y from -3 to 0) */}
+                                            <img
+                                                src="assets/images/icon/menu-icon.png"
+                                                alt="Menu icon"
+                                                className={
+                                                    "absolute -left-6 transform transition-all duration-200 " +
+                                                    // base: hidden & slightly up
+                                                    "opacity-0 -translate-y-3 " +
+                                                    // show on hover via group-hover
+                                                    "group-hover:opacity-100 group-hover:translate-y-0 " +
+                                                    // ensure visible & placed when active
+                                                    (isActive ? "opacity-100 translate-y-0" : "")
+                                                }
+                                                aria-hidden
+                                            />
+                                            {link.name}
+                                        </>
+                                    )}
                                 </NavLink>
                             ))}
                         </div>
