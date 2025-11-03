@@ -57,7 +57,15 @@
   --color-primary: #df0b1a;
   --color-secondary: #fbb402;
   --color-customBlue: #274789;
-  --color-secondary-500: #3b82f6;
+
+  --color-flavor1: #adc441; 
+  --color-flavor2: #f5831f; 
+  --color-flavor3: #007337; 
+  --color-flavor4: #ffc831; 
+  --color-flavor5: #f41a0b; 
+  --color-flavor6: #da4e24; 
+  --color-flavor7: #00b041; 
+  --color-flavor8: #ff521b; 
 
   --font-sans: "WoodChuck", ui-sans-serif, system-ui, -apple-system, "Segoe UI",
     Roboto, "Helvetica Neue", Arial, sans-serif;
