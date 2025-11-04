@@ -78,13 +78,13 @@ const Home = () => {
       {/* Brand Story */}
       <section className="mt-12">
         <div className="text-center mb-12">
-          <a
-            href=""
-            className="bg-primary px-8 py-2 font-headingNew text-white rounded-full text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
-          >
-            Discover Our Flavours
-          </a>
-        </div>
+            <a
+              href=""
+              className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
+            >
+              Discover Our Flavours
+            </a>
+          </div>
         <div className="bg-secondary">
           <div className="c-space py-20">
             <div className="text-center">
@@ -109,7 +109,7 @@ const Home = () => {
                   </p>
                   <a
                     href=""
-                    className="text-[26px] bg-primary px-7 py-2 font-headingNew text-white rounded-full uppercase hover:bg-customBlue duration-300"
+                    className="text-12px] md:text-[26px] bg-primary px-7 py-2 font-headingNew text-white rounded-full uppercase hover:bg-customBlue duration-300"
                   >
                     Learn More
                   </a>
@@ -143,7 +143,7 @@ const Home = () => {
 
               <a
                 href=""
-                className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[11px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
+                className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
               >
                 Own a Happy Potato
               </a>
@@ -191,7 +191,7 @@ const Home = () => {
           <div className="text-center mt-12">
             <a
               href=""
-              className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[11px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
+              className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
             >
               visit our stores
             </a>
@@ -215,7 +215,7 @@ const Home = () => {
           <div className="text-center mt-12 md:mt-18">
             <a
               href=""
-              className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[11px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
+              className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
             >
               join our big Family!
             </a>
