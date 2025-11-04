@@ -24,6 +24,7 @@ const SEO = ({
 
   return (
     <>
+      <title>{full}</title>
       {description && <meta name="description" content={description} />}
       <meta name="robots" content={robots} />
       {absUrl && <link rel="canonical" href={absUrl} />}

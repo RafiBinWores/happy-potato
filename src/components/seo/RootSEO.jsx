@@ -16,7 +16,6 @@ const org = {
 
   return (
     <>
-      <meta name="theme-color" content="#111827" />
       <meta property="og:site_name" content={SITE.name} />
       <meta property="og:type" content="website" />
       <meta property="og:image" content={abs(SITE.defaultImage)} />

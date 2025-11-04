@@ -1,0 +1,46 @@
+{
+  "locations": [
+    {
+      "id": 1,
+      "name": "Mid Valley, Kuala Lumpur",
+      "image": "assets/images/shop/shop1.jpeg",
+      "address": "LGK-07, LG Floor, Mid Valley Megamall, Kuala Lumpur",
+      "hours": "10 a.m. - 10 p.m."
+    },
+    {
+      "id": 2,
+      "name": "Berjaya Times Square",
+      "image": "assets/images/shop/shop1.jpeg",
+      "address": "LGK-07, LG Floor, Mid Valley Megamall, Kuala Lumpur",
+      "hours": "10 a.m. - 10 p.m."
+    },
+    {
+      "id": 3,
+      "name": "The Gardens Mall, Kuala Lumpur",
+      "image": "assets/images/shop/shop1.jpeg",
+      "address": "LG1.99, Lower Ground Floor, Sunway Pyramid, Selangor",
+      "hours": "10 a.m. - 10 p.m."
+    },
+    {
+      "id": 4,
+      "name": "IOI City Mall, Putrajaya, Selangor",
+      "image": "assets/images/shop/shop1.jpeg",
+      "address": "Lot 1.23, Level 1, Pavilion KL, Bukit Bintang",
+      "hours": "10 a.m. - 10 p.m."
+    },
+    {
+      "id": 5,
+      "name": "IOI City Mall, Putrajaya, Selangor",
+      "image": "assets/images/shop/shop1.jpeg",
+      "address": "Lot 1.23, Level 1, Pavilion KL, Bukit Bintang",
+      "hours": "10 a.m. - 10 p.m."
+    },
+    {
+      "id": 6,
+      "name": "IOI City Mall, Putrajaya, Selangor",
+      "image": "assets/images/shop/shop1.jpeg",
+      "address": "Lot 1.23, Level 1, Pavilion KL, Bukit Bintang",
+      "hours": "10 a.m. - 10 p.m."
+    }
+  ]
+}
