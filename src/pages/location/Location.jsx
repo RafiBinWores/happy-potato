@@ -113,7 +113,7 @@ export default function Location() {
             <select
               value={loc}
               onChange={(e) => setLoc(e.target.value)}
-              className="border-primary px-3 py-3 w-[200px] focus:ring-2 focus:ring-primary bg-gray-200"
+              className="border-primary px-3 py-3 w-[200px] focus:ring-2 focus:ring-primary bg-gray-200 outline-none"
             >
               <option value="">All locations</option>
               {locations.map((l) => (
@@ -125,7 +125,7 @@ export default function Location() {
 
             <button
               onClick={() => setLoc("")}
-              className="bg-primary px-6 py-3 text-white hover:bg-customBlue cursor-pointer"
+              className="bg-primary px-6 py-3 text-white cursor-pointer"
             >
               Reset
             </button>
