@@ -154,16 +154,16 @@ const Home = () => {
 
       {/* Store location section */}
       <section className="bg-white">
-        <div className="c-space py-24">
+        <div className="c-space pt-8 md:pt-15 lg:pt-20 pb-10 md:pb-18 lg:pb-24">
           <div className="text-center">
-            <p className="uppercase text-customBlue font-headingNew text-[26px]">
+            <p className="uppercase text-customBlue font-headingNew text-[18px] md:text-[26px]">
               Visit Our Stores
             </p>
-            <h3 className="uppercase text-[40px] text-primary leading-11">
+            <h2 className="uppercase text-[23px] md:text-[40px] text-primary leading-[25px] md:leading-11">
               Explore the Happy Potato Experience In-Person!
-            </h3>
+            </h2>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 md:mt-8">
             {shopLocations.locations.slice(0, 3).map((shop) => (
               <div key={shop.id} className="card">
                 <img
