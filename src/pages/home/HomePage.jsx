@@ -4,8 +4,10 @@ import FixedBg from "../../components/fixedBg/FixedBg";
 import SEO from "../../components/seo/SEO";
 import ShopCard from "../../components/card/ShopCard";
 import data from "../../data/shopLocations.json";
-import { Store } from "lucide-react";
+import { ClockFading, Mail, Phone, PhoneCall, Store } from "lucide-react";
 import { Link } from "react-router";
+import { useState } from "react";
+import { useForm } from "react-hook-form";
 
 const flavors = [
   {
@@ -33,6 +35,65 @@ const flavors = [
 const Home = () => {
   const shops = data?.locations ?? [];
   const top4 = shops.slice(0, 4);
+
+  const [result, setResult] = useState("");
+  const {
+    register,
+    handleSubmit,
+    reset,
+    formState: { errors, isSubmitting },
+  } = useForm({
+    defaultValues: {
+      name: "",
+      email: "",
+      phone: "",
+      topic: "",
+      message: "",
+      botcheck: "",
+    },
+  });
+
+  const onSubmit = async (values) => {
+    // stop bots
+    if (values.botcheck) return;
+
+    setResult("");
+    const fd = new FormData();
+    fd.append("access_key", import.meta.env.VITE_WEB3FORMS_KEY);
+    fd.append(
+      "subject",
+      "Business Inquiries & Partnerships From Happy Potato BD"
+    );
+    fd.append(
+      "from_name",
+      "Happy Potato Business Inquiries & Partnerships Form"
+    );
+
+    // map your fields
+    fd.append("name", values.name);
+    fd.append("email", values.email);
+    fd.append("phone", values.phone);
+    fd.append("topic", values.topic);
+    fd.append("message", values.message);
+
+    try {
+      const res = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: fd,
+      });
+      const data = await res.json();
+      if (!data.success) throw new Error(data.message || "Failed");
+      setResult("Thanks! We’ll contact you shortly.");
+      reset();
+    } catch (e){
+      setResult("Could not send your message. Please try again.");
+    }
+  };
+  
+
+  const base =
+    "bg-secondary/25 w-full outline-none focus:border-primary focus:border py-2.5 px-4 placeholder:text-xl  text-zinc-500";
+  const errText = "text-red-600 text-sm mt-1";
 
   return (
     <>
@@ -222,6 +283,173 @@ const Home = () => {
             </a>
           </div>
         </div>
+      </section>
+
+      {/* Contact section */}
+      <section className="bg-[url('/assets/images/bg/contact-bg.jpg')] bg-cover bg-center relative">
+        <div className="c-space py-8 md:py-10 z-20 relative">
+          
+          <div className="bg-white rounded-2xl md:rounded-3xl lg:rounded-4xl shadow-2xl md:my-5 lg:my-12 py-5">
+            <div className="text-center">
+              <h3 className="text-lg md:text-[26px] uppercase text-customBlue">
+                Business Inquiries & Partnerships
+              </h3>
+              <h2 className="text-[23px] md:text-[40px] uppercase md:leading-11 leading-[25px] text-primary">
+                Connect with Happy Potato
+              </h2>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-12 px-5 md:px-7 lg:px-20 mt-4 md:mt-10 gap-4 md:gap-6 lg:gap-0">
+
+              <div className="flex flex-col justify-center col-span-5">
+                <h3 className="font-headingNew text-xl md:text-[30px] text-customBlue mb-6">We’d love to talk to you!</h3>
+                <li className="flex items-start gap-3 mb-6">
+                  <span className="inline-flex">
+                    {/* clock icon */}
+                    <PhoneCall className="text-primary size-5" />
+                  </span>
+                  <p className="text-[13px] text-slate-900">017XXXXXXXX</p>
+                </li>
+                <li className="flex items-start gap-3 mb-6">
+                  <span className="inline-flex">
+                    {/* clock icon */}
+                    <ClockFading className="text-primary size-5" />
+                  </span>
+                  <div>
+                    <p className="text-[13px] text-slate-900">Mon 10 a.m. – 5 p.m.</p>
+                    <p className="text-[13px] text-slate-900">Tue 10 a.m. – 5 p.m.</p>
+                    <p className="text-[13px] text-slate-900">Wed 10 a.m. – 5 p.m.</p>
+                    <p className="text-[13px] text-slate-900">Thu 10 a.m. – 5 p.m.</p>
+                    <p className="text-[13px] text-slate-900">Fri 10 a.m. – 5 p.m.</p>
+                  </div>
+                </li>
+                <li className="flex items-start gap-3">
+                  <span className="inline-flex">
+                    {/* clock icon */}
+                    <Mail className="text-primary size-5" />
+                  </span>
+                  <p className="text-[13px] text-slate-900 ">franchise@happypotatobd.com</p>
+                </li>
+              </div>
+
+              <div className="grid-cols-7 col-span-7">
+                <form onSubmit={handleSubmit(onSubmit)} className="space-y-5">
+                  {/* Honeypot */}
+                  <input
+                    type="text"
+                    {...register("botcheck")}
+                    className="hidden"
+                    tabIndex={-1}
+                    autoComplete="off"
+                  />
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Name"
+                      className={`${base} ${
+                        errors.name ? "border border-red-500" : ""
+                      }`}
+                      {...register("name", { required: "Name is required" })}
+                    />
+                    {errors.name && (
+                      <p className={errText}>{errors.name.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="email"
+                      placeholder="Email"
+                      className={`${base} ${
+                        errors.email ? "border border-red-500" : ""
+                      }`}
+                      {...register("email", {
+                        required: "Email is required",
+                        pattern: {
+                          value: /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/,
+                          message: "Enter a valid email",
+                        },
+                      })}
+                    />
+                    {errors.email && (
+                      <p className={errText}>{errors.email.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    {/* Use tel instead of number to allow + and leading 0 */}
+                    <input
+                      type="tel"
+                      placeholder="Phone"
+                      className={`${base} ${
+                        errors.phone ? "border border-red-500" : ""
+                      }`}
+                      {...register("phone", {
+                        required: "Phone is required",
+                        pattern: {
+                          value: /^[0-9+\-() ]{7,20}$/,
+                          message: "Enter a valid phone",
+                        },
+                      })}
+                    />
+                    {errors.phone && (
+                      <p className={errText}>{errors.phone.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <input
+                      type="text"
+                      placeholder="Topic"
+                      className={`${base} ${
+                        errors.phone ? "border border-red-500" : ""
+                      }`}
+                      {...register("topic", {
+                        required: "Topic is required",
+                      })}
+                    />
+                    {errors.topic && (
+                      <p className={errText}>{errors.topic.message}</p>
+                    )}
+                  </div>
+
+                  <div>
+                    <textarea
+                      placeholder="Message"
+                      className={`${base} min-h-32 ${
+                        errors.message ? "border border-red-500" : ""
+                      }`}
+                      {...register("message", {
+                        required: "Message is required",
+                        minLength: {
+                          value: 10,
+                          message: "At least 10 characters",
+                        },
+                      })}
+                    />
+                    {errors.message && (
+                      <p className={errText}>{errors.message.message}</p>
+                    )}
+                  </div>
+
+                  <button
+                    type="submit"
+                    disabled={isSubmitting}
+                    className="bg-primary px-5 md:px-8 py-1 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300 disabled:opacity-60 disabled:cursor-not-allowed cursor-pointer"
+                  >
+                    {isSubmitting ? "Sending..." : "Send"}
+                  </button>
+
+                  <span className="block text-sm text-green-600">{result}</span>
+                </form>
+              </div>
+            </div>
+          </div>
+          <img src="assets/images/icon/happy-potato.png" alt="Fry bg" className="bottom-19 right-6 md:bottom-10 lg:bottom-6 md:right-8 lg:right-16 absolute w-[81px] md:w-[172px] lg:w-[280px]" />
+        </div>
+
+        <img src="assets/images/bg/fry-bg.png" alt="Fry bg" className="bottom-0 left-0 absolute w-screen object-cover" />
       </section>
     </>
   );
