@@ -5,42 +5,48 @@
       "name": "Mid Valley, Kuala Lumpur",
       "image": "assets/images/shop/shop1.jpeg",
       "address": "LGK-07, LG Floor, Mid Valley Megamall, Kuala Lumpur",
-      "hours": "10 a.m. - 10 p.m."
+      "hours": "10 a.m. - 10 p.m.",
+      "location": "Kuala Lumpur"
     },
     {
       "id": 2,
       "name": "Berjaya Times Square",
-      "image": "assets/images/shop/shop1.jpeg",
-      "address": "LGK-07, LG Floor, Mid Valley Megamall, Kuala Lumpur",
-      "hours": "10 a.m. - 10 p.m."
+      "image": "assets/images/shop/shop2.jpeg",
+      "address": "Lot B1-12, Berjaya Times Square, Kuala Lumpur",
+      "hours": "10 a.m. - 10 p.m.",
+      "location": "Kuala Lumpur"
     },
     {
       "id": 3,
-      "name": "The Gardens Mall, Kuala Lumpur",
+      "name": "Sunway Pyramid",
       "image": "assets/images/shop/shop1.jpeg",
       "address": "LG1.99, Lower Ground Floor, Sunway Pyramid, Selangor",
-      "hours": "10 a.m. - 10 p.m."
+      "hours": "10 a.m. - 10 p.m.",
+      "location": "Selangor"
     },
     {
       "id": 4,
-      "name": "IOI City Mall, Putrajaya, Selangor",
+      "name": "Pavilion Kuala Lumpur",
       "image": "assets/images/shop/shop1.jpeg",
       "address": "Lot 1.23, Level 1, Pavilion KL, Bukit Bintang",
-      "hours": "10 a.m. - 10 p.m."
+      "hours": "10 a.m. - 10 p.m.",
+      "location": "Kuala Lumpur"
     },
     {
       "id": 5,
-      "name": "IOI City Mall, Putrajaya, Selangor",
+      "name": "IOI City Mall, Putrajaya",
       "image": "assets/images/shop/shop1.jpeg",
-      "address": "Lot 1.23, Level 1, Pavilion KL, Bukit Bintang",
-      "hours": "10 a.m. - 10 p.m."
+      "address": "Lot G-02, IOI City Mall, Putrajaya",
+      "hours": "10 a.m. - 10 p.m.",
+      "location": "Putrajaya"
     },
     {
       "id": 6,
-      "name": "IOI City Mall, Putrajaya, Selangor",
+      "name": "One Utama",
       "image": "assets/images/shop/shop1.jpeg",
-      "address": "Lot 1.23, Level 1, Pavilion KL, Bukit Bintang",
-      "hours": "10 a.m. - 10 p.m."
+      "address": "Lot LG-45, One Utama Shopping Centre, Bandar Utama",
+      "hours": "10 a.m. - 10 p.m.",
+      "location": "Selangor"
     }
   ]
 }
