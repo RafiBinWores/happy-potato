@@ -164,7 +164,7 @@ const Home = () => {
             </h2>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 md:mt-8">
-            {shopLocations.locations.slice(0, 3).map((shop) => (
+            {shopLocations.locations.slice(0, 4).map((shop) => (
               <div key={shop.id} className="card">
                 <img
                   src={shop.image}
