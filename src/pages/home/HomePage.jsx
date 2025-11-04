@@ -5,6 +5,7 @@ import SEO from "../../components/seo/SEO";
 import ShopCard from "../../components/card/ShopCard";
 import data from "../../data/shopLocations.json";
 import { Store } from "lucide-react";
+import { Link } from "react-router";
 
 const flavors = [
   {
@@ -188,12 +189,12 @@ const Home = () => {
 
           {top4?.length > 0 && (
             <div className="text-center mt-12">
-              <a
-                href="/shops"
+              <Link
+                to="/locations"
                 className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
               >
                 visit our stores
-              </a>
+              </Link>
             </div>
           )}
         </div>

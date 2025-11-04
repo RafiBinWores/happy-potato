@@ -99,8 +99,8 @@ export default function Location() {
     <section>
 
         <div className="bg-[url('/assets/images/bg/location-bg.jpg')] bg-cover bg-center">
-        <div className="c-space py-20 text-center">
-            <h2 className="text-[55px] text-white text-shadow-[3px_4px_0px_#1F385A]">
+        <div className="c-space py-6 md:py-15 lg:py-20 text-center">
+            <h2 className="text-2xl md:text-[50px] md:leading-[55px] text-white text-shadow-[3px_4px_0px_#1F385A] uppercase">
                 ⁠Born in Malaysia, made to be World’s best
             </h2>
         </div>
