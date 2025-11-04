@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import ShopCard from "../../components/card/ShopCard";
 import data from "../../data/shopLocations.json";
+import SEO from "../../components/seo/SEO";
 
 const all = data?.locations ?? [];
 const PAGE_SIZE = 2;
@@ -96,15 +97,21 @@ export default function Location() {
   );
 
   return (
-    <section>
+    <>
+      <SEO
+        title="Locations"
+        description="Crispy fries, French Fires, Shaker Fries, & more."
+        url="/"
+      />
 
-        <div className="bg-[url('/assets/images/bg/location-bg.jpg')] bg-cover bg-center">
+      {/* Content */}
+      <section className="bg-[url('/assets/images/bg/location-bg.jpg')] bg-cover bg-center">
         <div className="c-space py-6 md:py-15 lg:py-20 text-center">
-            <h2 className="text-2xl md:text-[50px] md:leading-[55px] text-white text-shadow-[3px_4px_0px_#1F385A] uppercase">
-                ⁠Born in Malaysia, made to be World’s best
-            </h2>
+          <h2 className="text-2xl md:text-[50px] md:leading-[55px] text-white text-shadow-[3px_4px_0px_#1F385A] uppercase">
+            ⁠Born in Malaysia, made to be World’s best
+          </h2>
         </div>
-        </div>
+      </section>
 
       <div className="c-space">
         {/* Filter */}
@@ -158,6 +165,6 @@ export default function Location() {
           </>
         )}
       </div>
-    </section>
+    </>
   );
 }
