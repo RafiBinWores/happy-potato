@@ -30,7 +30,11 @@ const flavors = [
 const Home = () => {
   return (
     <>
-      <SEO title="Home" description="Crispy fries, French Fires, Shaker Fries, & more." url="/" />
+      <SEO
+        title="Home"
+        description="Crispy fries, French Fires, Shaker Fries, & more."
+        url="/"
+      />
 
       {/* Hero Section */}
       <section>
@@ -152,27 +156,31 @@ const Home = () => {
       <section className="bg-white">
         <div className="c-space py-24">
           <div className="text-center">
-            <p className="uppercase text-customBlue font-headingNew text-[26px]">Visit Our Stores</p>
-            <h3 className="uppercase text-[40px] text-primary leading-11">Explore the Happy Potato Experience In-Person!</h3>
+            <p className="uppercase text-customBlue font-headingNew text-[26px]">
+              Visit Our Stores
+            </p>
+            <h3 className="uppercase text-[40px] text-primary leading-11">
+              Explore the Happy Potato Experience In-Person!
+            </h3>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-8">
             {shopLocations.locations.slice(0, 3).map((shop) => (
               <div key={shop.id} className="card">
-                <img 
-                  src={shop.image} 
-                  alt={`${shop.name} Store`} 
-                  className="h-[200px] w-full object-cover object-center" 
+                <img
+                  src={shop.image}
+                  alt={`${shop.name} Store`}
+                  className="h-[200px] w-full object-cover object-center"
                 />
                 <div className="bg-shopCard p-4 h-[200px]">
                   <h4 className="text-[26px] text-primary leading-8 h-[60px] flex items-center">
                     {shop.name}
                   </h4>
                   <div className="flex items-center gap-4 mt-6 mb-5">
-                    <MapPin className="text-primary size-7"/>
+                    <MapPin className="text-primary size-7" />
                     <p className="text-[13px]">{shop.address}</p>
                   </div>
                   <div className="flex items-center gap-4">
-                    <ClockFading className="text-primary size-6"/>
+                    <ClockFading className="text-primary size-6" />
                     <p className="text-[13px]">{shop.hours}</p>
                   </div>
                 </div>
@@ -182,18 +190,36 @@ const Home = () => {
 
           <div className="text-center mt-12">
             <a
-                href=""
-                className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[11px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
-              >
-                visit our stores
-              </a>
+              href=""
+              className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[11px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
+            >
+              visit our stores
+            </a>
           </div>
         </div>
       </section>
 
       {/* Join Our team section */}
-            <section className="bg-[url('/assets/images/bg/home-joinus-bg.jpg')] bg-cover bg-center">
-        <div className="c-space pt-16">
+      <section className="bg-[url('/assets/images/bg/home-joinus-bg.jpg')] bg-cover bg-center">
+        <div className="c-space pt-10 md:pt-15 lg:pt-20 pb-10 md:pb-18 lg:pb-24">
+          <div className="text-center">
+            <p className="uppercase text-secondary font-headingNew text-[26px]">
+              Join Our Team
+            </p>
+            <h2 className="uppercase text-[23px] md:text-[40px] text-white leading-[25px] md:leading-11">
+              Happy Potato Is <span className="text-secondary">Hiring</span> for In-Store and Ground Staff!
+            </h2>
+          </div>
+
+          
+          <div className="text-center mt-12 md:mt-18">
+            <a
+              href=""
+              className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[11px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
+            >
+              join our big Family!
+            </a>
+          </div>
         </div>
       </section>
     </>
