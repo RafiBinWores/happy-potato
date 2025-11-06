@@ -85,7 +85,7 @@ const Home = () => {
       if (!data.success) throw new Error(data.message || "Failed");
       setResult("Thanks! We’ll contact you shortly.");
       reset();
-    } catch (e){
+    } catch {
       setResult("Could not send your message. Please try again.");
     }
   };
