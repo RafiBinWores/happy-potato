@@ -1,12 +1,13 @@
 import { FaFacebook, FaInstagram, FaTiktok } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
+import ImageUpload from "../image/ImageUpload";
 
 const Footer = () => {
   return (
     <>
       <div className="bg-secondary py-3 grid place-items-center">
-        <img
-          src="assets/images/logo/logo.png"
+        <ImageUpload
+          src="logo.png"
           alt="Logo"
           className="h-[60px]"
         />

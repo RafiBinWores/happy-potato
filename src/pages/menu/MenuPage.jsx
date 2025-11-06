@@ -1,5 +1,6 @@
 import Fries from "../../components/fries/Fries";
 import SEO from "../../components/seo/SEO";
+import ImageUpload from "../../components/image/ImageUpload";
 
 const Menu = () => {
   return (
@@ -20,8 +21,8 @@ const Menu = () => {
       </section>
 
       <div className="c-space">
-        <img
-          src="assets/images/menu/cheesy-banner.jpg"
+        <ImageUpload
+          src="menu/cheesy-banner.jpg"
           alt="Cheesy chicken ball banner"
           className="lg:h-[640px] w-full object-cover object-center"
         />
@@ -38,8 +39,8 @@ const Menu = () => {
           </div>
 
           <div className="basis-1/2">
-            <img
-              src="assets/images/menu/menu1.jpg"
+            <ImageUpload
+              src="menu/menu1.jpg"
               alt="Savour the Crunch menu"
               className="md:h-[354px] lg:h-[570px] object-center bg-center w-full"
             />
@@ -48,16 +49,16 @@ const Menu = () => {
 
         <div className="flex flex-col-reverse md:flex-row">
           <div className="basis-1/2">
-            <img
-              src="assets/images/menu/menu2.jpg"
+            <ImageUpload
+              src="menu/menu2.jpg"
               alt="shake-up menu"
               className="h-[347px] md:h-[354px] lg:h-[570px] object-center bg-center w-full"
             />
           </div>
 
           <div className="flex flex-col items-center justify-center px-0 md:px-[30px] py-[30px] md:py-0 lg:px-17 text-center basis-1/2">
-            <img
-              src="assets/images/menu/menu3.png"
+            <ImageUpload
+              src="menu/menu3.png"
               alt="shake-up menu"
               className="w-[187px] md:w-[147px] lg:w-[190px] object-cover"
             />

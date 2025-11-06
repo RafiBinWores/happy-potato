@@ -1,6 +1,7 @@
 import { Menu } from "lucide-react";
 import { useState } from "react";
 import { NavLink } from "react-router";
+import ImageUpload from "../image/ImageUpload";
 
 const Navbar = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
@@ -13,7 +14,7 @@ const Navbar = () => {
         { name: "Menu", path: "/menu" },
         { name: "About Us", path: "/about" },
         { name: "Franchising", path: "/franchising" },
-        { name: "Location", path: "/locations" },
+        { name: "Locations", path: "/locations" },
         { name: "Contact Us", path: "/contact" },
         { name: "Career", path: "/career" },
     ];
@@ -24,8 +25,8 @@ const Navbar = () => {
                 <div className="c-space py-2">
                     <nav className="flex items-center justify-between">
                         <NavLink to="/" className="flex items-center gap-2">
-                            <img
-                                src="assets/images/logo/logo.png"
+                            <ImageUpload
+                                src="logo.png"
                                 alt="Logo"
                                 className="h-8 md:h-9 lg:h-12"
                             />
@@ -62,9 +63,9 @@ const Navbar = () => {
                         </div>
 
                         <div className="">
-                            <img
-                                src="./assets/images/button_happy_potato.gif"
-                                alt=""
+                            <ImageUpload
+                                src="button_happy_potato.gif"
+                                alt="Happy Potato Gif"
                                 className="w-[200px] hidden lg:inline-block"
                             />
 
@@ -105,7 +106,7 @@ const Navbar = () => {
                 >
                     <div className="flex items-center justify-between px-4 py-3 border-b">
                         <div className="flex items-center gap-2">
-                            <img src="./assets/images/logo/logo.png" alt="Logo" className="h-10" />
+                            <ImageUpload src="logo.png" alt="Logo" className="h-10" />
                         </div>
                         <button
                             onClick={closeSidebar}
@@ -146,9 +147,9 @@ const Navbar = () => {
                         ))}
 
                         <div className="pt-3">
-                            <img
-                                src="./assets/images/button_happy_potato.gif"
-                                alt=""
+                            <ImageUpload
+                                src="button_happy_potato.gif"
+                                alt="happy potato gif"
                                 className="w-full"
                             />
                         </div>

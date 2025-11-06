@@ -8,28 +8,29 @@ import { ClockFading, Mail, Phone, PhoneCall, Store } from "lucide-react";
 import { Link } from "react-router";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import ImageUpload from "../../components/image/ImageUpload";
 
 const flavors = [
   {
     bg: "bg-flavor1",
-    icon: "assets/images/icon/icon1.png",
+    icon: "icon/icon1.png",
     label: "sour cream",
   },
-  { bg: "bg-flavor2", icon: "assets/images/icon/icon2.png", label: "cheese" },
-  { bg: "bg-flavor3", icon: "assets/images/icon/icon3.png", label: "seaweed" },
+  { bg: "bg-flavor2", icon: "icon/icon2.png", label: "cheese" },
+  { bg: "bg-flavor3", icon: "icon/icon3.png", label: "seaweed" },
   {
     bg: "bg-flavor4",
-    icon: "assets/images/icon/icon4.png",
+    icon: "icon/icon4.png",
     label: "corn cheese",
   },
   {
     bg: "bg-flavor5",
-    icon: "assets/images/icon/icon5.png",
+    icon: "icon/icon5.png",
     label: "hot & spicy",
   },
-  { bg: "bg-flavor6", icon: "assets/images/icon/icon6.png", label: "barbecue" },
-  { bg: "bg-flavor7", icon: "assets/images/icon/icon7.png", label: "tomato" },
-  { bg: "bg-flavor8", icon: "assets/images/icon/icon8.png", label: "tom yam" },
+  { bg: "bg-flavor6", icon: "icon/icon6.png", label: "barbecue" },
+  { bg: "bg-flavor7", icon: "icon/icon7.png", label: "tomato" },
+  { bg: "bg-flavor8", icon: "icon/icon8.png", label: "tom yam" },
 ];
 
 const Home = () => {
@@ -135,7 +136,7 @@ const Home = () => {
               className={`${flavor.bg} grid place-items-center py-3 group cursor-none`}
             >
               <div className="bg-amber-50 rounded-full size-18 duration-300 group-hover:scale-110">
-                <img src={flavor.icon} alt={flavor.label} />
+                <ImageUpload src={flavor.icon} alt={flavor.label} />
               </div>
               <p className="text-white font-headingNew mt-2 text-[19px]">
                 {flavor.label}
@@ -166,7 +167,7 @@ const Home = () => {
               </h3>
 
               <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 mt-4 lg:mt-8 mb-4">
-                <img src="assets/images/map/potato-map.png" alt="" />
+                <ImageUpload src="map/potato-map.png" alt="Location Map" />
                 <div className="mt-5">
                   <p className="bg-white rounded-2xl md:rounded-3xl text-[13px] md:text-base text-customBlue px-5 md:px-6 lg:px-9 py-7 mb-8">
                     Happy Potato, proudly born in Sabah in 2019, has quickly
@@ -195,7 +196,7 @@ const Home = () => {
         <div className="c-space pt-16">
           <div className="flex items-center flex-col-reverse lg:flex-row md:gap-28 lg:gap-0 gap-16">
             <div className="basis-3/5">
-              <img src="assets/images/franchise-fries.png" alt="Fries" />
+              <ImageUpload src="franchise-fries.png" alt="Fries" />
             </div>
             <div className="basis-2/5 text-center lg:text-start">
               <p className="uppercase font-headingNew text-customBlue text-base md:text-[19px] ">
@@ -303,7 +304,8 @@ const Home = () => {
 
               <div className="flex flex-col justify-center col-span-5">
                 <h3 className="font-headingNew text-xl md:text-[30px] text-customBlue mb-6">We’d love to talk to you!</h3>
-                <li className="flex items-start gap-3 mb-6">
+                <ul>
+                  <li className="flex items-start gap-3 mb-6">
                   <span className="inline-flex">
                     {/* clock icon */}
                     <PhoneCall className="text-primary size-5" />
@@ -330,6 +332,7 @@ const Home = () => {
                   </span>
                   <p className="text-[13px] text-slate-900 ">franchise@happypotatobd.com</p>
                 </li>
+                </ul>
               </div>
 
               <div className="grid-cols-7 col-span-7">
@@ -446,10 +449,10 @@ const Home = () => {
               </div>
             </div>
           </div>
-          <img src="assets/images/icon/happy-potato.png" alt="Fry bg" className="bottom-19 right-6 md:bottom-10 lg:bottom-6 md:right-8 lg:right-16 absolute w-[81px] md:w-[172px] lg:w-[280px]" />
+          <ImageUpload src="icon/happy-potato.png" alt="Fry bg" className="bottom-19 right-6 md:bottom-10 lg:bottom-6 md:right-8 lg:right-16 absolute w-[81px] md:w-[172px] lg:w-[280px]" />
         </div>
 
-        <img src="assets/images/bg/fry-bg.png" alt="Fry bg" className="bottom-0 left-0 absolute w-screen object-cover" />
+        <ImageUpload src="bg/fry-bg.png" alt="Fry bg" className="bottom-0 left-0 absolute w-screen object-cover" />
       </section>
     </>
   );
