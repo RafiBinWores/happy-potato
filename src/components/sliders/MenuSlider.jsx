@@ -108,7 +108,7 @@ const MenuSlider = ({ items = [] }) => {
   );
 
   return (
-    <section ref={sectionRef} className="relative py-8 overflow-hidden bg-white">
+    <section ref={sectionRef} className="relative pt-8 overflow-hidden bg-white">
       <div className="flex flex-col lg:flex-row lg:items-center c-space md:justify-between gap-x-5 lg:mb-20">
         <h3 className="text-primary text-[23px] md:text-[40px] mb-4 md:mb-0 p-2 whitespace-nowrap shrink-0">
           CHICKEN & SPECIALTY FRIES

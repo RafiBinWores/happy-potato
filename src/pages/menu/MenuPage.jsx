@@ -98,26 +98,62 @@ const Menu = () => {
       {/* Menu Section */}
       <MenuSlider />
 
-      <section className="c-space mt-20 mb-20">
+      {/* Combo section */}
+      <section className="c-space my-10 md:my-15 lg:my-20">
         <div className="bg-[url('/assets/images/bg/bg-menu2.jpg')] bg-cover bg-center p-7 md:py-16 rounded-2xl">
           <div className="flex justify-center">
             <img src="assets/images/menu/menu5.png" alt="Happy Combo Title" />
           </div>
           <div className="grid-cols-1 grid lg:grid-cols-3 gap-3 mt-10 lg:mt-14">
             <div className="text-center grid place-content-center">
-              <img src="assets/images/menu/combo1.png" alt="Shaker Fries & Chicken Nugget combo" />
-              <p className="font-headingNew text-primary md:text-[19px] pt-6">Shaker Fries + <br /> Chicken Nugget</p>
+              <img
+                src="assets/images/menu/combo1.png"
+                alt="Shaker Fries & Chicken Nugget combo"
+              />
+              <p className="font-headingNew text-primary md:text-[19px] pt-6">
+                Shaker Fries + <br /> Chicken Nugget
+              </p>
             </div>
             <div className="text-center grid place-content-center">
-              <img src="assets/images/menu/combo2.png" alt="Shaker Fries & Chicken Pop combo" />
-              <p className="font-headingNew text-primary md:text-[19px] pt-6">Shaker Fries + <br /> Chicken Nugget</p>
-            </div> 
+              <img
+                src="assets/images/menu/combo2.png"
+                alt="Shaker Fries & Chicken Pop combo"
+              />
+              <p className="font-headingNew text-primary md:text-[19px] pt-6">
+                Shaker Fries + <br /> Chicken Nugget
+              </p>
+            </div>
             <div className="text-center grid place-content-center">
-              <img src="assets/images/menu/combo3.png" alt="Shaker Fries & Chicken Finger combo" />
-              <p className="font-headingNew text-primary md:text-[19px] pt-6">Shaker Fries + <br /> Chicken Nugget</p>
+              <img
+                src="assets/images/menu/combo3.png"
+                alt="Shaker Fries & Chicken Finger combo"
+              />
+              <p className="font-headingNew text-primary md:text-[19px] pt-6">
+                Shaker Fries + <br /> Chicken Nugget
+              </p>
             </div>
           </div>
         </div>
+      </section>
+
+      {/* Flavour section */}
+      <section className="bg-flavor-bg py-20">
+          <div className="text-center">
+            <h3 className="text-2xl md:text-[40px] md:leading-11 uppercase text-primary">
+              Flavours
+            </h3>
+            <p className="text-customBlue pt-2">Simple, fun, and deliciously different. Get ready to find your new favorite fry twist!</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 c-space mt-10">
+            <img src="assets/images/menu/flavour1.jpg" alt="Cheese" className="w-full object-contain" />
+            <img src="assets/images/menu/flavour2.jpg" alt="Sour Cream" className="w-full object-contain" />
+            <img src="assets/images/menu/flavour3.jpg" alt="BBQ" className="w-full object-contain" />
+            <img src="assets/images/menu/flavour4.jpg" alt="Hot & Spicy" className="w-full object-contain" />
+            <img src="assets/images/menu/flavour5.jpg" alt="Tomyum" className="w-full object-contain" />
+            <img src="assets/images/menu/flavour6.jpg" alt="Seaweed" className="w-full object-contain" />
+            <img src="assets/images/menu/flavour7.jpg" alt="Corn Cheese" className="w-full object-contain" />
+            <img src="assets/images/menu/flavour8.jpg" alt="Sichuang mala" className="w-full object-contain" />
+          </div>
       </section>
     </>
   );
