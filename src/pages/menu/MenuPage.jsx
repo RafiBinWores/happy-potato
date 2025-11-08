@@ -95,7 +95,7 @@ const Menu = () => {
         </div>
       </section>
 
-      {/* Menu */}
+      {/* Menu Section */}
       <MenuSlider/>
     </>
   );

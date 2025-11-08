@@ -147,7 +147,7 @@ const MenuSlider = ({ items = [] }) => {
           navigation={{ prevEl: ".hp-prev", nextEl: ".hp-next" }}
           breakpoints={{
             480: { slidesPerView: 1.5, spaceBetween: 16 },
-            640: { slidesPerView: 2.2, spaceBetween: 16 },
+            640: { slidesPerView: 2.5, spaceBetween: 16 },
             768: { slidesPerView: 3.5, spaceBetween: 20 },
             1024: { slidesPerView: 4.5, spaceBetween: 24 },
             1280: { slidesPerView: 5.5, spaceBetween: 28 },
