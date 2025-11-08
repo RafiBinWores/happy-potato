@@ -142,7 +142,7 @@ const Menu = () => {
             <h3 className="text-2xl md:text-[40px] md:leading-11 uppercase text-primary">
               Flavours
             </h3>
-            <p className="text-customBlue pt-2">Simple, fun, and deliciously different. Get ready to find your new favorite fry twist!</p>
+            <p className="text-customBlue text-[13px] md:text-base pt-2">Simple, fun, and deliciously different. Get ready to find your new favorite fry twist!</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 c-space mt-10">
             <img src="assets/images/menu/flavour1.jpg" alt="Cheese" className="w-full object-contain" />
