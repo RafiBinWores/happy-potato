@@ -119,7 +119,7 @@ const MenuSlider = ({ items = [] }) => {
             potato, served up with a twist of culinary creativity.
           </p>
           {/* Custom nav buttons */}
-          <div className="flex items-center gap-6 mt-5 md:mt-0">
+          <div className="flex items-center gap-4 lg:gap-6 mt-5 md:mt-0">
             <button
               className="hp-prev inline-grid place-items-center size-[26px] lg:size-10 rounded-full bg-primary ring-4 ring-secondary transition cursor-pointer hover:bg-customBlue duration-300"
               aria-label="Previous"
