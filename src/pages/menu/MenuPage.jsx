@@ -97,6 +97,9 @@ const Menu = () => {
 
       {/* Menu Section */}
       <MenuSlider/>
+
+
+              {/* <span class="inline-block transform translate-x-[20px] translate-y-[85px] rotate-[-30deg]">G</span> */}
     </>
   );
 };

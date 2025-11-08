@@ -108,29 +108,29 @@ const MenuSlider = ({ items = [] }) => {
   );
 
   return (
-    <section ref={sectionRef} className="relative py-8 overflow-hidden">
-      <div className="flex flex-col lg:items-center c-space md:justify-between ">
-        <h3 className="text-primary text-[23px] md:text-[40px] mb-4 md:mb-0">
+    <section ref={sectionRef} className="relative py-8 overflow-hidden bg-white">
+      <div className="flex flex-col lg:flex-row lg:items-center c-space md:justify-between gap-x-5 lg:mb-20">
+        <h3 className="text-primary text-[23px] md:text-[40px] mb-4 md:mb-0 p-2 whitespace-nowrap shrink-0">
           CHICKEN & SPECIALTY FRIES
         </h3>
-        <div className="flex items-center justify-between">
-          <p className="text-customBlue text-[13px]">
+        <div className="flex flex-col md:flex-row md:items-center md:justify-between md:gap-3 lg:gap-8 md:mt-4">
+          <p className="text-customBlue text-[13px] md:text-base">
             They’re not just sides, but expressions of our love for all things
             potato, served up with a twist of culinary creativity.
           </p>
           {/* Custom nav buttons */}
-          <div className="flex items-center gap-6 mt-5">
+          <div className="flex items-center gap-6 mt-5 md:mt-0">
             <button
-              className="hp-prev inline-grid place-items-center size-[26px] rounded-full bg-primary ring-4 ring-secondary transition cursor-pointer hover:bg-customBlue duration-300"
+              className="hp-prev inline-grid place-items-center size-[26px] lg:size-10 rounded-full bg-primary ring-4 ring-secondary transition cursor-pointer hover:bg-customBlue duration-300"
               aria-label="Previous"
             >
-              <ChevronLeft className="text-secondary size-[26px]" />
+              <ChevronLeft className="text-secondary size-[26px] lg:size-10" />
             </button>
             <button
-              className="hp-next inline-grid place-items-center size-[26px] rounded-full bg-primary ring-4 ring-secondary transition cursor-pointer hover:bg-customBlue duration-300"
+              className="hp-next inline-grid place-items-center size-[26px] lg:size-10 rounded-full bg-primary ring-4 ring-secondary transition cursor-pointer hover:bg-customBlue duration-300"
               aria-label="Next"
             >
-              <ChevronRight className="text-secondary size-[26px]" />
+              <ChevronRight className="text-secondary size-[26px] lg:size-10" />
             </button>
           </div>
         </div>
@@ -140,7 +140,7 @@ const MenuSlider = ({ items = [] }) => {
       <div className="mt-6">
         <Swiper
           modules={[Navigation, Autoplay, A11y]}
-          slidesPerView={1.15}
+          slidesPerView={2.2}
           spaceBetween={16}
           loop
           autoplay={{ delay: 2800, disableOnInteraction: false }}
