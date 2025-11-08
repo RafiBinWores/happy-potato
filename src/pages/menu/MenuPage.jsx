@@ -96,10 +96,29 @@ const Menu = () => {
       </section>
 
       {/* Menu Section */}
-      <MenuSlider/>
+      <MenuSlider />
 
-
-              {/* <span class="inline-block transform translate-x-[20px] translate-y-[85px] rotate-[-30deg]">G</span> */}
+      <section className="c-space mt-20 mb-20">
+        <div className="bg-[url('/assets/images/bg/bg-menu2.jpg')] bg-cover bg-center p-7 md:py-16 rounded-2xl">
+          <div className="flex justify-center">
+            <img src="assets/images/menu/menu5.png" alt="Happy Combo Title" />
+          </div>
+          <div className="grid-cols-1 grid lg:grid-cols-3 gap-3 mt-10 lg:mt-14">
+            <div className="text-center grid place-content-center">
+              <img src="assets/images/menu/combo1.png" alt="Shaker Fries & Chicken Nugget combo" />
+              <p className="font-headingNew text-primary md:text-[19px] pt-6">Shaker Fries + <br /> Chicken Nugget</p>
+            </div>
+            <div className="text-center grid place-content-center">
+              <img src="assets/images/menu/combo2.png" alt="Shaker Fries & Chicken Pop combo" />
+              <p className="font-headingNew text-primary md:text-[19px] pt-6">Shaker Fries + <br /> Chicken Nugget</p>
+            </div> 
+            <div className="text-center grid place-content-center">
+              <img src="assets/images/menu/combo3.png" alt="Shaker Fries & Chicken Finger combo" />
+              <p className="font-headingNew text-primary md:text-[19px] pt-6">Shaker Fries + <br /> Chicken Nugget</p>
+            </div>
+          </div>
+        </div>
+      </section>
     </>
   );
 };
