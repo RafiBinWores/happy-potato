@@ -2,6 +2,7 @@ import Fries from "../../components/fries/Fries";
 import SEO from "../../components/seo/SEO";
 import ImageUpload from "../../components/image/ImageUpload";
 import MenuSlider from "../../components/sliders/MenuSlider";
+import FlavourCard from "../../components/card/FlavourCard";
 
 const Menu = () => {
   return (
@@ -144,16 +145,9 @@ const Menu = () => {
             </h3>
             <p className="text-customBlue text-[13px] md:text-base pt-2">Simple, fun, and deliciously different. Get ready to find your new favorite fry twist!</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 c-space mt-10">
-            <img src="assets/images/menu/flavour1.jpg" alt="Cheese" className="w-full object-contain" />
-            <img src="assets/images/menu/flavour2.jpg" alt="Sour Cream" className="w-full object-contain" />
-            <img src="assets/images/menu/flavour3.jpg" alt="BBQ" className="w-full object-contain" />
-            <img src="assets/images/menu/flavour4.jpg" alt="Hot & Spicy" className="w-full object-contain" />
-            <img src="assets/images/menu/flavour5.jpg" alt="Tomyum" className="w-full object-contain" />
-            <img src="assets/images/menu/flavour6.jpg" alt="Seaweed" className="w-full object-contain" />
-            <img src="assets/images/menu/flavour7.jpg" alt="Corn Cheese" className="w-full object-contain" />
-            <img src="assets/images/menu/flavour8.jpg" alt="Sichuang mala" className="w-full object-contain" />
-          </div>
+          
+          {/* Flavour card */}
+          <FlavourCard />
       </section>
     </>
   );

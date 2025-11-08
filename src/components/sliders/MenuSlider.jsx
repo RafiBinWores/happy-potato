@@ -152,7 +152,7 @@ const MenuSlider = ({ items = [] }) => {
             1024: { slidesPerView: 4.5, spaceBetween: 24 },
             1280: { slidesPerView: 5.5, spaceBetween: 28 },
           }}
-          className="!overflow-visible"
+          className="overflow-visible!"
         >
           {data.map((item) => (
             <SwiperSlide key={item.id}>
