@@ -1,6 +1,7 @@
 import ImageUpload from "../image/ImageUpload";
 
 const Fries = () => {
+  
   return (
     <div className="grid col-span-1 gap-y-10 md:grid-cols-2 md:gap-x-8 md:gap-y-20 lg:gap-0 lg:grid-cols-4 mx-5 md:mx-[30px] lg:mx-[50px] items-end mt-5 text-center pb-5">
       <div className="relative grid place-items-center">

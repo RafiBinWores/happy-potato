@@ -1,6 +1,7 @@
 import Fries from "../../components/fries/Fries";
 import SEO from "../../components/seo/SEO";
 import ImageUpload from "../../components/image/ImageUpload";
+import MenuSlider from "../../components/sliders/MenuSlider";
 
 const Menu = () => {
   return (
@@ -93,6 +94,9 @@ const Menu = () => {
           <Fries />
         </div>
       </section>
+
+      {/* Menu */}
+      <MenuSlider/>
     </>
   );
 };
