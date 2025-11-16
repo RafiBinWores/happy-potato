@@ -5,7 +5,6 @@ import { Navigation, Autoplay } from "swiper/modules";
 // Swiper styles
 import "swiper/css";
 import { ChevronLeft, ChevronRight } from "lucide-react";
-import ImageUpload from "../image/ImageUpload";
 
 export default function HeroSlider() {
   // custom ease-out effect for smooth transitions
@@ -41,25 +40,33 @@ export default function HeroSlider() {
             navigation={{ nextEl: ".fries-next", prevEl: ".fries-prev" }}
           >
             <SwiperSlide>
-              <ImageUpload
-                src="hero/hero1.jpg"
+              <img
+                src="assets/images/hero/hero1.jpg"
                 alt="Happy Potato Hero 1"
                 className="w-full h-[150px] md:h-[300px] lg:h-[450px] bg-center rounded-3xl object-cover select-none"
               />
             </SwiperSlide>
 
             <SwiperSlide>
-              <ImageUpload
-                src="hero/hero2.jpg"
+              <img
+                src="assets/images/hero/hero2.jpg"
                 alt="Happy Potato Hero 2"
                 className="w-full h-[150px] md:h-[300px] lg:h-[450px] bg-center rounded-3xl object-cover select-none"
               />
             </SwiperSlide>
 
             <SwiperSlide>
-              <ImageUpload
-                src="hero/hero3.jpg"
+              <img
+                src="assets/images/hero/hero3.jpg"
                 alt="Happy Potato Hero 3"
+                className="w-full h-[150px] md:h-[300px] lg:h-[450px] bg-center rounded-3xl object-cover select-none"
+              />
+            </SwiperSlide>
+
+            <SwiperSlide>
+              <img
+                src="assets/images/hero/hero4.jpeg"
+                alt="Happy Potato Hero 4"
                 className="w-full h-[150px] md:h-[300px] lg:h-[450px] bg-center rounded-3xl object-cover select-none"
               />
             </SwiperSlide>

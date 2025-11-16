@@ -147,7 +147,9 @@ const Menu = () => {
           </div>
           
           {/* Flavour card */}
-          <FlavourCard />
+          <div className="md:mt-10">
+            <FlavourCard />
+          </div>
       </section>
     </>
   );

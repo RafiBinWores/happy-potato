@@ -11,7 +11,7 @@ const defaultItems = [
 
 const FlavourCard = ({ items = defaultItems }) => {
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 c-space mt-10">
+    <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
       {items.map((it, idx) => (
         <img
           key={it.src ?? idx}
