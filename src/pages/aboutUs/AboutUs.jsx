@@ -109,7 +109,7 @@ const AboutUs = () => {
         <div className="space-y-6 lg:space-y-0 mt-10">
           {/* flex 1 */}
           <div className="flex flex-col lg:flex-row">
-            <div className="pb-[30px] basis-1/2 px-20 my-auto">
+            <div className="pb-[30px] basis-1/2 lg:px-20 my-auto">
               <h3 className="text-2xl md:text-[39px] text-customBlue">
                 Quality Delights
               </h3>
@@ -129,7 +129,7 @@ const AboutUs = () => {
             <div className="basis-1/2">
               <img src="assets/images/about/about3.jpg" alt="About image" />
             </div>
-            <div className="pb-[30px] basis-1/2 px-20 my-auto">
+            <div className="pb-[30px] basis-1/2 lg:px-20 my-auto">
               <h3 className="text-2xl md:text-[39px] text-customBlue">
                 Affordable Bliss
               </h3>
@@ -143,7 +143,7 @@ const AboutUs = () => {
 
           {/* flex 3 */}
           <div className="flex flex-col lg:flex-row">
-            <div className="pb-[30px] basis-1/2 px-20 my-auto">
+            <div className="pb-[30px] basis-1/2 lg:px-20 my-auto">
               <h3 className="text-2xl md:text-[39px] text-customBlue">
                 Collective Happiness
               </h3>
@@ -162,7 +162,7 @@ const AboutUs = () => {
             <div className="basis-1/2">
               <img src="assets/images/about/about5.jpg" alt="About image" />
             </div>
-            <div className="pb-[30px] basis-1/2 px-20 my-auto">
+            <div className="pb-[30px] basis-1/2 lg:px-20 my-auto">
               <h3 className="text-2xl md:text-[39px] text-customBlue">
                 Vibrant Community Spirit
               </h3>
@@ -176,21 +176,22 @@ const AboutUs = () => {
         </div>
       </section>
 
+      {/* Flavours Section */}
       <section className="bg-[url('/assets/images/bg/contact-bg.jpg')] bg-cover bg-center">
         <div className="c-space py-8 md:py-16 z-20">
           <div className="bg-white rounded-3xl md:rounded-3xl lg:rounded-[50px] shadow-[0_4px_17px_5px_rgba(0,0,0,0.25)] md:my-5 lg:py-20 py-5  px-6 lg:px-10">
-            <div className="grid grid-cols-1 md:grid-cols-11 gap-10">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
               {/* flavour grid */}
               <div className="lg:col-span-7">
                 <FlavourCard />
               </div>
 
               {/* Content grid */}
-              <div className="lg:col-span-4 flex justify-center items-center lg:items-start flex-col space-y-4 lg:space-y-7">
+              <div className="lg:col-span-5 flex justify-center items-center lg:items-start flex-col space-y-4 lg:space-y-7">
                 <h3 className="uppercase text-customBlue text-[23px] md:text-[40px] lg:leading-11">
                   Discover Flavours That Amaze
                 </h3>
-                <p className="font-light md:font-normal">
+                <p className="font-light md:font-normal pb-4">
                   Explore Happy Potato’s diverse menu, from classic crispy fries
                   to innovative flavours. There’s something for everyone! Click
                   below to see the full menu and find your next favourite dish.
@@ -198,13 +199,13 @@ const AboutUs = () => {
                 </p>
 
                 {/* Button */}
-                <div className="text-center">
+                <div className="text-center pb-4 lg:pb-0">
                   <a
-                  href="/menu"
-                  className="bg-primary px-5 md:px-8 py-1 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300 mt-2"
-                >
-                  Explore our menu
-                </a>
+                    href="/menu"
+                    className="bg-primary px-5 md:px-8 py-1 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300 mt-2"
+                  >
+                    Explore our menu
+                  </a>
                 </div>
               </div>
             </div>
