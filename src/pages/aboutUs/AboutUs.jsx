@@ -55,8 +55,9 @@ const AboutUs = () => {
 
               <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 mt-4 lg:mt-8 mb-4">
                 <img
-                  src="assets/images/map/potato-map2.png"
+                  src="assets/images/map/potato-map3.png"
                   alt="Location Map"
+                  className="w-full object object-cover my-auto"
                 />
                 <div className="mt-5 bg-white rounded-2xl md:rounded-3xl text-customBlue px-5 md:px-6 lg:px-9 py-7 mb-8">
                   <div>
@@ -172,6 +173,76 @@ const AboutUs = () => {
                 communities we serve, spreading happiness beyond our snacks.
               </p>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Golden Spuds */}
+      <section>
+        <div className="bg-flavor-bg">
+          <div className="c-space py-20">
+            <div className="text-center lg:mx-20">
+              <p className="uppercase text-primary text-lg md:text-[26px] font-headingNew leading-[39px]">
+                Golden Spuds
+              </p>
+              <h3 className="uppercase text-customBlue text-[23px] md:text-[40px] leading-[25px] md:leading-11">
+                Celebrating the Milestones and Achievements of Happy Potato
+              </h3>
+
+              <div className="grid grid-cols-1 lg:grid-cols-10 gap-4 md:px-6 mt-8 md:w-[400px] lg:w-full mx-auto">
+                {/* About 1 */}
+                <div className="lg:col-span-3 bg-white flex flex-col items-center rounded-4xl lg:rounded-3xl p-[35px]">
+                  <img src="assets/images/icon/icon-about1.png" alt="Store icon" className="size-[50px]" />
+                  <p className="font-headingNew text-[60px] lg:text-[80px] text-primary leading-20 pt-2">03</p>
+                  <p className="font-headingNew text-[39px] text-primary leading-[51px] pb-[18px] uppercase pt-2">Outlets</p>
+                  <p className="text-customBlue">Number of outlets</p>
+                </div>
+
+                {/* About 2 */}
+                <div className="lg:col-span-3 bg-white flex flex-col items-center rounded-4xl lg:rounded-3xl p-[35px]">
+                  <img src="assets/images/icon/icon-about2.png" alt="Canton icon" className="size-[50px]" />
+                  <p className="font-headingNew text-[60px] lg:text-[80px] text-primary leading-20 pt-2">09</p>
+                  <p className="font-headingNew text-[39px] text-primary leading-[51px] pb-[18px] uppercase pt-2">Job</p>
+                  <p className="text-customBlue">Opportunities created</p>
+                </div>
+
+                {/* About 3 */}
+                <div className="lg:col-span-4 bg-white flex flex-col items-center rounded-4xl lg:rounded-3xl p-[35px]">
+                <img src="assets/images/icon/icon-about3.png" alt="Fries icon" className="size-[50px]" />
+                <p className="font-headingNew text-[60px] lg:text-[80px] text-primary leading-20 pt-2">3</p>
+                  <p className="font-headingNew text-[39px] text-primary leading-[51px] pb-[18px] uppercase pt-2">Million</p>
+                  <p className="text-customBlue">Fries sold per year</p>
+                </div>
+               
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Footprint */}
+      <section>
+        <div className="bg-customBlue">
+          <div className="c-space py-20">
+            <div className="text-center lg:mx-20">
+              <p className="uppercase text-secondary text-lg md:text-[26px] font-headingNew leading-[39px]">
+                Happy Potato Across Malaysia
+              </p>
+              <h3 className="uppercase text-white text-[23px] md:text-[40px] leading-[25px] md:leading-11">
+                Our Nationwide Footprint
+              </h3>
+            </div>
+
+            <div className="flex flex-col lg:flex-row items-center mt-10 gap-10">
+                <div className="basis-2/4 pe-10">
+                  <h4 className="text-secondary text-[18px] md:text-[28px] leading-[31px] mb-6">Happy Potato’s presence across the vibrant landscapes of Bangladesh</h4>
+                  <p className="text-white mb-6">Across Dhaka, our outlets are ready to serve you the most delightful fries, crafted with care and unbeatable flavour.</p>
+                  <p className="text-white">Each location reflects our passion for bringing joy and deliciousness. Find your nearest Happy Potato and celebrate the flavours that unite us all.</p>
+                </div>
+                <div className="basis-2/4">
+                  <img src="assets/images/map/potato-map1.png" alt="Map" className="w-full md:w-[400px]" />
+                </div>
+              </div>
           </div>
         </div>
       </section>

@@ -41,7 +41,7 @@ export default function HeroSlider() {
           >
             <SwiperSlide>
               <img
-                src="assets/images/hero/hero1.jpg"
+                src="assets/images/hero/hero4.jpg"
                 alt="Happy Potato Hero 1"
                 className="w-full h-[150px] md:h-[300px] lg:h-[450px] bg-center rounded-3xl object-cover select-none"
               />
@@ -65,7 +65,7 @@ export default function HeroSlider() {
 
             <SwiperSlide>
               <img
-                src="assets/images/hero/hero4.jpeg"
+                src="assets/images/hero/hero1.jpg"
                 alt="Happy Potato Hero 4"
                 className="w-full h-[150px] md:h-[300px] lg:h-[450px] bg-center rounded-3xl object-cover select-none"
               />

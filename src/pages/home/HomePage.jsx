@@ -166,7 +166,7 @@ const Home = () => {
 
               <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 mt-4 lg:mt-8 mb-4">
                 <img
-                  src="assets/images/map/potato-map.png"
+                  src="assets/images/map/potato-map3.png"
                   alt="Location Map"
                 />
                 <div className="mt-5">
@@ -180,7 +180,7 @@ const Home = () => {
                     Happy Together.
                   </p>
                   <a
-                    href=""
+                    href="/about-us"
                     className="text-12px] md:text-[26px] bg-primary px-7 py-2 font-headingNew text-white rounded-full uppercase hover:bg-customBlue duration-300"
                   >
                     Learn More
