@@ -4,7 +4,7 @@ import data from "../../data/shopLocations.json";
 import SEO from "../../components/seo/SEO";
 
 const all = data?.locations ?? [];
-const PAGE_SIZE = 2;
+const PAGE_SIZE = 12;
 
 function uniqueLocations(shops) {
   return [...new Set(shops.map((s) => s.location).filter(Boolean))].sort();

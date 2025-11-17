@@ -302,7 +302,7 @@ const Home = () => {
 
             <div className="grid grid-cols-1 lg:grid-cols-12 px-5 md:px-7 lg:px-20 mt-4 md:mt-10 gap-4 md:gap-6 lg:gap-0">
               <div className="flex flex-col justify-center col-span-5">
-                <h3 className="font-headingNew text-xl md:text-[30px] text-customBlue mb-6">
+                <h3 className="font-headingNew text-xl md:text-[30px] text-customBlue mb-6 capitalize">
                   We’d love to talk to you!
                 </h3>
                 <ul>
