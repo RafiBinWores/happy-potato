@@ -82,8 +82,12 @@ const FranchisePage = () => {
               <h2 className="text-[23px] md:text-[40px] md:leading-11 text-primary uppercase mb-5">
                 Go Big or Start Small!
               </h2>
-              <p className="text-[13px] md:text-base">Be it small, medium or large, we have something for everyone.</p>
-              <p className="text-[13px] md:text-base">Investment start from Tk 150,000 depends on store size.</p>
+              <p className="text-[13px] md:text-base">
+                Be it small, medium or large, we have something for everyone.
+              </p>
+              <p className="text-[13px] md:text-base">
+                Investment start from Tk 150,000 depends on store size.
+              </p>
             </div>
 
             <div className="mt-6">
@@ -94,10 +98,17 @@ const FranchisePage = () => {
       </section>
 
 
+{/* Outlet Open Timeline */}
+      <section className="bg-white">
+        <div className="c-space py-12 md:py-16 lg:py-20">
+          {/* Heading */}
+          <h2 className="text-center text-[24px] md:text-[36px] font-headingNew text-[#E51E26] uppercase">
+            Outlet Open
+          </h2>
 
-      <FranchiseTimeline />
-
-      
+          <FranchiseTimeline />
+        </div>
+      </section>
     </>
   );
 };
