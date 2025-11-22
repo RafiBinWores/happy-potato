@@ -1,6 +1,7 @@
 import { Mail, PhoneCall } from "lucide-react";
 import { useState } from "react";
 import { useForm } from "react-hook-form";
+import SEO from "../../components/seo/SEO";
 
 const ContactPage = () => {
   const [result, setResult] = useState("");
@@ -62,6 +63,12 @@ const ContactPage = () => {
 
   return (
     <>
+          <SEO
+        title="Contact Us"
+        description="Crispy fries, French Fires, Shaker Fries, & more."
+        url="/"
+      />
+      
       <section className="bg-[url('/assets/images/bg/contact-bg.jpg')] bg-cover bg-center relative">
         <div className="c-space py-8 md:py-20 z-20 relative">
           <h2 className="text-[23px] md:text-[40px] uppercase md:leading-11 leading-[25px] text-primary text-center">

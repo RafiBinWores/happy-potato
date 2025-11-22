@@ -1,0 +1,28 @@
+{
+  "invest": [
+    {
+      "id": 1,
+      "image": "assets/images/franchise/icon-franchising1.png",
+      "title": "EASY TO OPERATE",
+      "desc": "Simple system & processes yet diverse menu offering"
+    },
+    {
+      "id": 2,
+      "image": "assets/images/franchise/icon-franchising2.png",
+      "title": "FLEXIBLE OUTLET FORMAT",
+      "desc": "Easy to scale & highly customizable with fast ROI"
+    },
+    {
+      "id": 3,
+      "image": "assets/images/franchise/icon-franchising3.png",
+      "title": "STRONG BRANDING & MARKETING",
+      "desc": "Solid brand positioning and voice with hyperactive marketing initiatives"
+    },
+    {
+      "id": 4,
+      "image": "assets/images/franchise/icon-franchising4.png",
+      "title": "HASSLE-FREE SUPPLY CHAIN",
+      "desc": "Concise SKU & easy in sourcing & management, backed by international partners"
+    }
+  ]
+}

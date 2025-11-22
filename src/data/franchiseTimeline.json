@@ -1,0 +1,52 @@
+{
+  "steps": [
+    {
+      "id": 1,
+      "step": "STEP 1",
+      "title": "SIGNING OF LETTER OF INTENT",
+      "duration": "within 4 weeks",
+      "image": "/assets/images/franchise/timeline1.jpg"
+    },
+    {
+      "id": 2,
+      "step": "STEP 2",
+      "title": "CONFIRMATION OF SITE TENANCY & AGREEMENT",
+      "duration": "within 4 weeks",
+      "image": "/assets/images/franchise/timeline2.jpg"
+    },
+    {
+      "id": 3,
+      "step": "STEP 3",
+      "title": "Signing of Letter of Offer (LOO) and Franchise Agreement (FA)",
+      "duration": "within 2 weeks",
+      "image": "/assets/images/franchise/timeline3.jpg"
+    },
+    {
+      "id": 4,
+      "step": "STEP 4",
+      "title": "Commencing Drawing & Renovation",
+      "duration": "within 6 weeks",
+      "image": "/assets/images/franchise/timeline4.jpg"
+    },
+    {
+      "id": 5,
+      "step": "STEP 5",
+      "title": "Pre-Opening Procedure & Staff Training",
+      "duration": "within 6 weeks",
+      "image": "/assets/images/franchise/timeline5.jpg"
+    },
+    {
+      "id": 6,
+      "step": "STEP 6",
+      "title": "Complete Renovation & Inspection",
+      "duration": "within 6 weeks",
+      "image": "/assets/images/franchise/timeline6.jpg"
+    },
+    {
+      "id": 7,
+      "step": "STEP 7",
+      "title": "OUTLET OPEN",
+      "image": "/assets/images/franchise/timeline7.jpeg"
+    }
+  ]
+}
