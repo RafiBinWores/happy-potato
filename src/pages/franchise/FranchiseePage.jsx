@@ -97,8 +97,7 @@ const FranchisePage = () => {
         </div>
       </section>
 
-
-{/* Outlet Open Timeline */}
+      {/* Outlet Open Timeline */}
       <section className="bg-white">
         <div className="c-space py-12 md:py-16 lg:py-20">
           {/* Heading */}
@@ -107,6 +106,51 @@ const FranchisePage = () => {
           </h2>
 
           <FranchiseTimeline />
+        </div>
+      </section>
+
+      {/* Franchise Partner Criteria */}
+      <section className="bg-flavor-bg">
+        <div className="c-space py-8 md:py-16 lg:py-20">
+          {/* Heading */}
+          <div className="text-center">
+            <p className="uppercase text-[18px] text-customBlue font-headingNew">
+              Are you perfect match for happy Potato?
+            </p>
+            <h2 className="text-[18px] md:text-[28px] font-headingNew text-primary uppercase mb-8">
+              Discover Our Ideal Franchise Partner Criteria!
+            </h2>
+          </div>
+
+          {/* Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+            <div className="bg-white p-[30px] text-center rounded-4xl">
+              <img src="assets/images/franchise/partner1.png" alt="" />
+              <p className="text-[13px] md:text-base pt-6 lg:pt-10">
+                Business People looking into F&B fast food business with short return on investment time
+              </p>
+            </div>
+            <div className="bg-white p-[30px] text-center rounded-4xl">
+              <img src="assets/images/franchise/partner2.png" alt="" />
+              <p className="text-[13px] md:text-base pt-6 lg:pt-10">
+                Excellent people skills and willing to work as a team
+              </p>
+            </div>
+            <div className="bg-white p-[30px] text-center rounded-4xl">
+              <img src="assets/images/franchise/partner3.png" alt="" />
+              <p className="text-[13px] md:text-base pt-6 lg:pt-10">
+               A commitment and focus on growing your business
+              </p>
+            </div>
+            <div className="bg-white p-[30px] text-center rounded-4xl">
+              <img src="assets/images/franchise/partner4.png" alt="" />
+              <p className="text-[13px] md:text-base pt-6 lg:pt-10">
+               Have passion to our brand and willing to grow the business with us.
+              </p>
+            </div>
+
+          </div>
         </div>
       </section>
     </>
