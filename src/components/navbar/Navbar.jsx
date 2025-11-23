@@ -15,7 +15,7 @@ const Navbar = () => {
         { name: "franchising", path: "/franchise" },
         { name: "Locations", path: "/locations" },
         { name: "Contact Us", path: "/contact-us" },
-        { name: "Career", path: "/career" },
+        { name: "Career", path: "/careers" },
     ];
 
     return (

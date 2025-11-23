@@ -6,6 +6,7 @@ import Location from "./pages/location/Location"
 import AboutUs from "./pages/aboutUs/AboutUs"
 import ContactPage from "./pages/contactUs/ContactPage"
 import FranchisePage from "./pages/franchise/FranchiseePage"
+import Career from "./pages/career/Career"
 
 function App() {
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="franchise" element={<FranchisePage />} />
           <Route path="locations" element={<Location />} />
           <Route path="contact-us" element={<ContactPage />} />
+          <Route path="careers" element={<Career />} />
         </Route>
       </Routes>
     </>
