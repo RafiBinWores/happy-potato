@@ -71,34 +71,41 @@ const AboutUs = () => {
                     <p className="uppercase font-bold pb-5 md:pb-8 text-[13px] md:text-base">
                       VISION
                     </p>
+
                     <p className="text-[13px] md:text-base">
-                      Serving happiness to people, you & us
+                      Bringing happiness to every corner of Bangladesh
                     </p>
+
                     <p className="uppercase font-bold text-[13px] md:text-base">
                       – HAPPY TOGETHER –
                     </p>
+
                     <p className="text-[13px] md:text-base">2025 – 2030</p>
                     <p className="text-[13px] md:text-base">
-                      To be the largest snacking chain in Malaysia & S.E.A
+                      To become Bangladesh’s leading snacking brand with outlets
+                      across all major cities
                     </p>
+
                     <p className="text-[13px] md:text-base">2030 – 2035</p>
                     <p className="text-[13px] md:text-base">
-                      To further expand to Asia while S.E.A as the stronghold
-                      for the brand
+                      To strengthen nationwide presence and introduce innovative
+                      snacking experiences for all ages
                     </p>
+
                     <p className="text-[13px] md:text-base">2035 – 2040</p>
                     <p className="text-[13px] md:text-base">
-                      To expand footprint worldwide & pioneering industry
-                      standard
+                      To establish Happy Potato Bangladesh as a regional
+                      benchmark for quality, fun, and consistency
                     </p>
                   </div>
+
                   <div>
                     <p className="uppercase font-bold py-5 lg:py-8 text-[13px] md:text-bases">
                       MISSION
                     </p>
                     <p className="text-[13px] md:text-base">
                       Happy Potato serve happiest moments with the best food &
-                      drinks by elevating worldwide industry standards
+                      drinks by elevating nationwide industry standards
                     </p>
                   </div>
                 </div>
@@ -307,10 +314,7 @@ const AboutUs = () => {
                   Discover Flavours That Amaze
                 </h3>
                 <p className="font-light md:font-normal pb-4">
-                  Explore Happy Potato’s diverse menu, from classic crispy fries
-                  to innovative flavours. There’s something for everyone! Click
-                  below to see the full menu and find your next favourite dish.
-                  Your taste buds will thank you!
+                  Happy Potato, proudly born in Sabah in 2019, has grown into Malaysia’s No.1 Shaker Fries brand with over 90 outlets nationwide. Now arriving in Bangladesh, Happy Potato brings its signature shaking style and bold, delicious flavours to a whole new family of food lovers. A bite full of joy, a shake full of fun — because with Happy Potato, Happy Together.
                 </p>
 
                 {/* Button */}

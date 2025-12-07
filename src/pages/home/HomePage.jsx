@@ -147,12 +147,12 @@ const Home = () => {
       {/* Brand Story */}
       <section className="mt-12">
         <div className="text-center mb-12">
-          <a
-            href=""
+          <Link
+            to="/menu"
             className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
           >
             Discover Our Flavours
-          </a>
+          </Link>
         </div>
         <div className="bg-secondary">
           <div className="c-space py-20">
@@ -164,27 +164,23 @@ const Home = () => {
                 Happy Potato - Our Flavorful Journey
               </h3>
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16 mt-4 lg:mt-8 mb-4">
-                <img
+              <div className="grid place-items-center grid-cols-1 lg:grid-cols-2 lg:gap-16 mt-4 lg:mt-8 mb-4">
+                <div className="flex items-center">
+                  <img
                   src="assets/images/map/potato-map3.png"
                   alt="Location Map"
                 />
+                </div>
                 <div className="mt-5">
                   <p className="bg-white rounded-2xl md:rounded-3xl text-[13px] md:text-base text-customBlue px-5 md:px-6 lg:px-9 py-7 mb-8">
-                    Happy Potato, proudly born in Sabah in 2019, has quickly
-                    become Malaysia's No.1 Shaker Fries brand. With over 90
-                    outlets nationwide, it stands as one of the fastest-growing
-                    homegrown F&B brands in the country. Known for its unique
-                    shaking method and bold, delicious flavours, Happy Potato
-                    brings happiness to every bite — because with Happy Potato,
-                    Happy Together.
+                    Happy Potato, proudly born in Sabah in 2019, has grown into Malaysia’s No.1 Shaker Fries brand with over 90 outlets nationwide. Now arriving in Bangladesh, Happy Potato brings its signature shaking style and bold, delicious flavours to a whole new family of food lovers. A bite full of joy, a shake full of fun — because with Happy Potato, Happy Together.
                   </p>
-                  <a
-                    href="/about-us"
+                  <Link
+                    to="/about-us"
                     className="text-12px] md:text-[26px] bg-primary px-7 py-2 font-headingNew text-white rounded-full uppercase hover:bg-customBlue duration-300"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -213,12 +209,12 @@ const Home = () => {
                 innovation!
               </p>
 
-              <a
-                href=""
+              <Link
+                to="/franchise"
                 className="bg-primary px-5 md:px-8 py-2 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300"
               >
                 Own a Happy Potato
-              </a>
+              </Link>
             </div>
           </div>
         </div>
