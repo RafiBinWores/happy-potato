@@ -62,11 +62,14 @@ const Navbar = () => {
                         </div>
 
                         <div className="">
+                            <NavLink to="/franchise">
                             <img
                                 src="assets/images/button_happy_potato.gif"
                                 alt="Happy Potato Gif"
                                 className="w-[200px] hidden lg:inline-block"
                             />
+                            </NavLink>
+                            
 
                             <button
                                 onClick={toggleSidebar}
@@ -146,11 +149,13 @@ const Navbar = () => {
                         ))}
 
                         <div className="pt-3">
+                            <NavLink to="/franchise">
                             <img
                                 src="assets/images/button_happy_potato.gif"
                                 alt="happy potato gif"
                                 className="w-full"
                             />
+                            </NavLink>
                         </div>
                     </nav>
                 </aside>

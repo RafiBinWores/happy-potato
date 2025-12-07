@@ -1,3 +1,4 @@
+import { Link } from "react-router";
 import FlavourCard from "../../components/card/FlavourCard";
 import SEO from "../../components/seo/SEO";
 
@@ -319,12 +320,12 @@ const AboutUs = () => {
 
                 {/* Button */}
                 <div className="text-center pb-4 lg:pb-0">
-                  <a
-                    href="/menu"
+                  <Link
+                    to="/menu"
                     className="bg-primary px-5 md:px-8 py-1 font-headingNew text-white rounded-full text-[12px] md:text-[26px] uppercase ring-secondary ring-4 hover:bg-customBlue duration-300 mt-2"
                   >
                     Explore our menu
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
