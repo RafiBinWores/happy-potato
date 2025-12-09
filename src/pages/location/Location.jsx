@@ -100,7 +100,7 @@ export default function Location() {
     <>
       <SEO
         title="Locations"
-        description="Crispy fries, French Fires, Shaker Fries, & more."
+        description="Find Happy Potato Bangladesh outlets near you in Dhaka. Visit our Dhanmondi, Gulshan, Uttara and more locations to enjoy fresh, crispy signature snacks."
         url="/"
       />
 

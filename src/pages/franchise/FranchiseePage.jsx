@@ -23,10 +23,10 @@ const FranchisePage = () => {
       email: "",
       address: "",
       phone: "",
-      experience: "", // yes / no
+      experience: "",
       experienceDetails: "",
       city: "",
-      selfOperate: "", // yes / no
+      selfOperate: "",
       investment: "",
       botcheck: "",
     },
@@ -35,7 +35,7 @@ const FranchisePage = () => {
   const experienceValue = watch("experience");
 
   const onSubmit = async (values) => {
-    if (values.botcheck) return; // stop bots
+    if (values.botcheck) return;
 
     setResult("");
     const fd = new FormData();
@@ -79,7 +79,7 @@ const FranchisePage = () => {
     <>
       <SEO
         title="Franchise Program"
-        description="Crispy fries, French Fires, Shaker Fries, & more."
+        description="Start your Happy Potato Bangladesh franchise. Low investment, high demand, strong support, and fast growth with a proven Malaysian snacking brand."
         url="/"
       />
 
@@ -156,7 +156,7 @@ const FranchisePage = () => {
                 Be it small, medium or large, we have something for everyone.
               </p>
               <p className="text-[13px] md:text-base">
-                Investment start from Tk 150,000 depends on store size.
+                Investment start from Tk xxx,xxx depends on store size.
               </p>
             </div>
 

@@ -7,7 +7,7 @@ const AboutUs = () => {
     <>
       <SEO
         title="About Us"
-        description="Crispy fries, French Fires, Shaker Fries, & more."
+        description="Discover the story behind Happy Potato Bangladesh — Malaysia’s popular fries brand now in Dhaka. Serving crispy snacks, great service, and everyday happiness."
         url="/"
       />
 

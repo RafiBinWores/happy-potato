@@ -5,7 +5,7 @@
       "name": "Low Capex Store",
       "size": "120–200sqft",
       "stars": 1,
-      "cost": "Tk 130,000",
+      "cost": "Tk xxx,xxx",
       "bestFor": "Neighbourhood Malls, Kiosks",
       "image": "/assets/images/franchise/l-store.jpg"
     },
@@ -14,7 +14,7 @@
       "name": "Standard Store",
       "size": "200–350sqft",
       "stars": 2,
-      "cost": "Tk 180,000",
+      "cost": "Tk xxx,xxx",
       "bestFor": "Shopping Malls, High Footfall Areas",
       "image": "/assets/images/franchise/s-store.jpg"
     },
@@ -23,7 +23,7 @@
       "name": "Premier Store",
       "size": "300–500sqft",
       "stars": 3,
-      "cost": "Tk 250,000+",
+      "cost": "Tk xxx,xxx+",
       "bestFor": "Premium Malls, Landmark Locations",
       "image": "/assets/images/franchise/p-store.jpg"
     }

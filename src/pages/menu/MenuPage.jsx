@@ -9,7 +9,7 @@ const Menu = () => {
     <>
       <SEO
         title="Menu"
-        description="Crispy fries, French Fires, Shaker Fries, & more."
+        description="Browse the Happy Potato Bangladesh menu: crispy fries, burgers, nuggets, rice bowls, and snacks made fresh daily. Delicious, affordable, and full of flavor."
         url="/"
       />
 

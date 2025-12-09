@@ -2,51 +2,27 @@
   "locations": [
     {
       "id": 1,
-      "name": "Mid Valley, Kuala Lumpur",
-      "image": "assets/images/shop/shop1.jpeg",
-      "address": "LGK-07, LG Floor, Mid Valley Megamall, Kuala Lumpur",
-      "hours": "10 a.m. - 10 p.m.",
-      "location": "Kuala Lumpur"
+      "name": "Elegant Tower, Gulshan 2",
+      "image": "assets/images/shop/outlet1.png",
+      "address": "Ground Floor, Elegant Tower,53 Gulshan Ave, Dhaka 1212",
+      "hours": "10 a.m. - 12 p.m.",
+      "location": "Dhaka"
     },
     {
       "id": 2,
-      "name": "Berjaya Times Square",
-      "image": "assets/images/shop/shop2.jpeg",
-      "address": "Lot B1-12, Berjaya Times Square, Kuala Lumpur",
-      "hours": "10 a.m. - 10 p.m.",
-      "location": "Kuala Lumpur"
+      "name": "Bikolpa Tower, Dhanmondi",
+      "image": "assets/images/shop/outlet2.png",
+      "address": "74 Sat Masjid Road, Bikolpa Tower Dhanmondi, Dhaka 1209",
+      "hours": "10 a.m. - 12 p.m.",
+      "location": "Dhaka"
     },
     {
       "id": 3,
-      "name": "Sunway Pyramid",
-      "image": "assets/images/shop/shop1.jpeg",
-      "address": "LG1.99, Lower Ground Floor, Sunway Pyramid, Selangor",
-      "hours": "10 a.m. - 10 p.m.",
-      "location": "Selangor"
-    },
-    {
-      "id": 4,
-      "name": "Pavilion Kuala Lumpur",
-      "image": "assets/images/shop/shop1.jpeg",
-      "address": "Lot 1.23, Level 1, Pavilion KL, Bukit Bintang",
-      "hours": "10 a.m. - 10 p.m.",
-      "location": "Kuala Lumpur"
-    },
-    {
-      "id": 5,
-      "name": "IOI City Mall, Putrajaya",
-      "image": "assets/images/shop/shop1.jpeg",
-      "address": "Lot G-02, IOI City Mall, Putrajaya",
-      "hours": "10 a.m. - 10 p.m.",
-      "location": "Putrajaya"
-    },
-    {
-      "id": 6,
-      "name": "One Utama",
-      "image": "assets/images/shop/shop1.jpeg",
-      "address": "Lot LG-45, One Utama Shopping Centre, Bandar Utama",
-      "hours": "10 a.m. - 10 p.m.",
-      "location": "Selangor"
+      "name": "Khelagor, Dhanmondi",
+      "image": "assets/images/shop/outlet3.png",
+      "address": "New-70 (old-770), Satmasjid Road, Dhanmondi, Dhaka 1209",
+      "hours": "10 a.m. - 12 p.m.",
+      "location": "Dhaka"
     }
   ]
 }

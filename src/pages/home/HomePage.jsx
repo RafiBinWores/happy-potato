@@ -97,8 +97,8 @@ const Home = () => {
   return (
     <>
       <SEO
-        title="Home"
-        description="Crispy fries, French Fires, Shaker Fries, & more."
+        title="Happy Potato Bangladesh – Taste Happiness Every Day"
+        description="Crispy fries, nuggets & signature Happy Potato snacks now in Bangladesh. Visit our outlets."
         url="/"
       />
 
@@ -238,6 +238,33 @@ const Home = () => {
               <Store className="text-primary size-20" />
               No shops yet.
             </div>
+          ) : top4.length < 4 ? (
+            // Center when fewer than 4 cards: render a grid that matches the item count
+            <div className="flex justify-center mt-6 md:mt-8">
+              {top4.length === 3 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-w-[1200px]">
+                  {top4.map((s) => (
+                    <ShopCard key={s.id} shop={s} />
+                  ))}
+                </div>
+              )}
+
+              {top4.length === 2 && (
+                <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6 w-full max-w-[800px]">
+                  {top4.map((s) => (
+                    <ShopCard key={s.id} shop={s} />
+                  ))}
+                </div>
+              )}
+
+              {top4.length === 1 && (
+                <div className="grid grid-cols-1 gap-6 w-full max-w-[420px]">
+                  {top4.map((s) => (
+                    <ShopCard key={s.id} shop={s} />
+                  ))}
+                </div>
+              )}
+            </div>
           ) : (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mt-6 md:mt-8">
               {top4.map((s) => (
@@ -307,7 +334,7 @@ const Home = () => {
                       {/* clock icon */}
                       <PhoneCall className="text-primary size-5" />
                     </span>
-                    <p className="text-[13px] text-slate-900">017XXXXXXXX</p>
+                    <p className="text-[13px] text-slate-900">+880 1715601601</p>
                   </li>
                   <li className="flex items-start gap-3 mb-6">
                     <span className="inline-flex">
@@ -338,7 +365,7 @@ const Home = () => {
                       <Mail className="text-primary size-5" />
                     </span>
                     <p className="text-[13px] text-slate-900 ">
-                      franchise@happypotatobd.com
+                      franchise.happypotato.com.bd@gmail.com
                     </p>
                   </li>
                 </ul>
