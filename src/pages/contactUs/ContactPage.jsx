@@ -82,41 +82,41 @@ const ContactPage = () => {
                   Available Office Hours:
                 </h4>
                 <p className="font-base text-white mt-1 pb-5">
-                  Monday – Friday 9am – 5pm
+                  Saturday – Thursday 10am – 6pm
                 </p>
               </div>
 
               <div className="mt-4 space-y-2 md:space-y-3">
                 <div className="flex items-center gap-3">
                   <PhoneCall className="text-secondary size-5" />
-                  <p className="text-white md:text-[19px]">+880 1715601601</p>
+                  <p className="text-white md:text-[19px]">+880 1700882388</p>
                 </div>
                 <div className="flex gap-3">
                   <Mail className="text-secondary size-5 mt-2" />
                   <div className="text-white">
                     <p className="md:text-[19px]">Any feedback please email to:</p>
-                    <a href="mailto:operation.happypotato.com.bd@gmail.com" className="md:text-[19px]">operation.happypotato.com.bd@gmail.com</a>
+                    <a href="mailto:operation@happypotato.com.bd" className="md:text-[19px]">operation@happypotato.com.bd</a>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <Mail className="text-secondary size-5 mt-2" />
                   <div className="text-white">
                     <p className="md:text-[19px]">Any marketing please email to:</p>
-                    <a href="mailto:marketing.happypotato.com.bd@gmail.com" className="md:text-[19px]">marketing.happypotato.com.bd@gmail.com</a>
+                    <a href="mailto:marketing@happypotato.com.bd" className="md:text-[19px]">marketing@happypotato.com.bd</a>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <Mail className="text-secondary size-5 mt-2" />
                   <div className="text-white">
                     <p className="md:text-[19px]">Any leasing please email to:</p>
-                    <a href="mailto:happypotato.com.bd@gmail.com" className="md:text-[19px]">happypotato.com.bd@gmail.com</a>
+                    <a href="mailto:info@happypotato.com.bd" className="md:text-[19px]">info@happypotato.com.bd</a>
                   </div>
                 </div>
                 <div className="flex gap-3">
                   <Mail className="text-secondary size-5 mt-2" />
                   <div className="text-white">
                     <p className="md:text-[19px]">Any job resume please email to:</p>
-                    <a href="mailto:hr.happypotato.com.bd@gmail.com" className="md:text-[19px]">hr.happypotato.com.bd@gmail.com</a>
+                    <a href="mailto:hr@happypotato.com.bd" className="md:text-[19px]">hr@happypotato.com.bd</a>
                   </div>
                 </div>
               </div>

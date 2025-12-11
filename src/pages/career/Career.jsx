@@ -112,7 +112,7 @@ const Career = () => {
       fd.append("from_name", "Happy Potato Careers Form");
 
       fd.append("name", values.name);
-      fd.append("dob", values.dob);
+      fd.append("Date Of Birth", values.dob);
       fd.append("email", values.email);
       fd.append("phone", values.phone);
       fd.append("applied_position", values.position);
@@ -588,7 +588,7 @@ const Career = () => {
                 </div>
 
                 {result && (
-                  <span className="block text-sm text-center mt-2 text-green-500">
+                  <span className="block text-sm text-center mt-2 text-red-600">
                     {result}
                   </span>
                 )}

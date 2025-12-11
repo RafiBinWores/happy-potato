@@ -49,9 +49,9 @@ const FranchisePage = () => {
     fd.append("address", values.address);
     fd.append("phone", values.phone);
     fd.append("experience", values.experience);
-    fd.append("experienceDetails", values.experienceDetails);
+    fd.append("experience Details", values.experienceDetails);
     fd.append("city", values.city);
-    fd.append("selfOperate", values.selfOperate);
+    fd.append("self Operate", values.selfOperate);
     fd.append("investment", values.investment);
 
     try {

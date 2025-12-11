@@ -334,7 +334,7 @@ const Home = () => {
                       {/* clock icon */}
                       <PhoneCall className="text-primary size-5" />
                     </span>
-                    <p className="text-[13px] text-slate-900">+880 1715601601</p>
+                    <p className="text-[13px] text-slate-900">+880 1700882388</p>
                   </li>
                   <li className="flex items-start gap-3 mb-6">
                     <span className="inline-flex">
@@ -343,19 +343,22 @@ const Home = () => {
                     </span>
                     <div>
                       <p className="text-[13px] text-slate-900">
-                        Mon 10 a.m. – 5 p.m.
+                        Sat 10 a.m. – 6 p.m.
                       </p>
                       <p className="text-[13px] text-slate-900">
-                        Tue 10 a.m. – 5 p.m.
+                        Sun 10 a.m. – 6 p.m.
                       </p>
                       <p className="text-[13px] text-slate-900">
-                        Wed 10 a.m. – 5 p.m.
+                        Mon 10 a.m. – 6 p.m.
                       </p>
                       <p className="text-[13px] text-slate-900">
-                        Thu 10 a.m. – 5 p.m.
+                        Tue 10 a.m. – 6 p.m.
                       </p>
                       <p className="text-[13px] text-slate-900">
-                        Fri 10 a.m. – 5 p.m.
+                        Wed 10 a.m. – 6 p.m.
+                      </p>
+                      <p className="text-[13px] text-slate-900">
+                        Thu 10 a.m. – 6 p.m.
                       </p>
                     </div>
                   </li>
@@ -365,7 +368,7 @@ const Home = () => {
                       <Mail className="text-primary size-5" />
                     </span>
                     <p className="text-[13px] text-slate-900 ">
-                      franchise.happypotato.com.bd@gmail.com
+                      franchise@happypotato.com.bd
                     </p>
                   </li>
                 </ul>
